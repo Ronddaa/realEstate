@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Helper2.0/",
+    "build": "vite build --base=/realEstate/",
     "preview": "vite preview"
   },
   "devDependencies": {
