@@ -1,0 +1,117 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/Inter-Regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/Inter-Medium.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/Inter-SemiBold.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/Inter-Bold.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth; /* Для плавного скролла по якорям и по сайту */
+  color: #000;
+  font-family: "Inter", sans-serif;
+}
+section {
+  position: relative; /* делаем позиционирование в секциях, удобно для размещения абсолютных блоков */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+button {
+  /* Убираем лишние отступы, как внутренние, так и внешние */
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none; /* Убираем базовые цифры и пометки списков */
+}
+a {
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+}
+button {
+  cursor: pointer; /* Добавляем палец при наведении на кнопку */
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  margin: 0 auto 50px;
+  padding: 0 50px;
+}
+section{
+  margin-bottom: 120px;
+}
+
+/* HEADER START */
+
+header {
+  padding: 24px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerWrapperNav {
+  display: flex;
+  gap: 45px;
+}
+.headerNavLinks {
+  color: #000;
+  font-size: 1.3vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+.headerNavLinks:hover,
+.headerNavLinks:focus {
+  color: #f5b201;
+}
+.headerBookingBtn {
+  background-color: transparent;
+  border: none;
+  color: #f5b201;
+  font-size: 1.3vw;
+  padding: 5px;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+.headerBookingBtn:hover, .headerBookingBtn:focus{
+  color: #d09900;
+}
+
+/* HEADER END */

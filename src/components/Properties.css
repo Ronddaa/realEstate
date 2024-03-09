@@ -1,0 +1,10 @@
+.PropertiesSlider{
+    overflow: hidden;
+}
+.wrapperSlideProperties{
+    display: flex;
+    gap: 30px;   
+}
+.slideProperties{
+    display: flex;
+}
