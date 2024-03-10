@@ -1,13 +1,26 @@
 import PropertiesIMG from '../assets/propertiesSlide.webp'
 import userProperties from '../assets/userProperties.webp'
 import './Properties.css'
+import Swiper from 'swiper/bundle'
+import 'swiper/css/bundle';
+
+// eslint-disable-next-line no-unused-vars
+const swiperProperties = new Swiper('.swiper', {
+    direction: 'horizontal',
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+})
+
 
 export default function PropertiesSlider() {
     return (
         <>
-            <section className='PropertiesSlider'>
-                <ul className="wrapperSlideProperties">
-                    <li className="slideProperties">
+            <section className='PropertiesSlider swiper'>
+                <ul className="wrapperSlideProperties swiper-wrapper">
+                    <li className="slideProperties swiper-slide">
                         <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" />
                         <article className='wrapperPropertiesInfo'>
                             <div className="wrapperAgentInfo">
@@ -25,7 +38,7 @@ export default function PropertiesSlider() {
                             <a href="#" className="linkToReviewsCardProperties">view property</a>
                         </article>
                     </li>
-                    <li className="slideProperties">
+                    <li className="slideProperties swiper-slide">
                         <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" />
                         <article className='wrapperPropertiesInfo'>
                             <div className="wrapperAgentInfo">
@@ -43,7 +56,7 @@ export default function PropertiesSlider() {
                             <a href="#" className="linkToReviewsCardProperties">view property</a>
                         </article>
                     </li>
-                    <li className="slideProperties">
+                    <li className="slideProperties swiper-slide">
                         <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" />
                         <article className='wrapperPropertiesInfo'>
                             <div className="wrapperAgentInfo">
@@ -61,7 +74,7 @@ export default function PropertiesSlider() {
                             <a href="#" className="linkToReviewsCardProperties">view property</a>
                         </article>
                     </li>
-                    <li className="slideProperties">
+                    <li className="slideProperties swiper-slide">
                         <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" />
                         <article className='wrapperPropertiesInfo'>
                             <div className="wrapperAgentInfo">
@@ -79,7 +92,7 @@ export default function PropertiesSlider() {
                             <a href="#" className="linkToReviewsCardProperties">view property</a>
                         </article>
                     </li>
-                    <li className="slideProperties">
+                    <li className="slideProperties swiper-slide">
                         <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" />
                         <article className='wrapperPropertiesInfo'>
                             <div className="wrapperAgentInfo">
@@ -98,6 +111,8 @@ export default function PropertiesSlider() {
                         </article>
                     </li>
                 </ul>
+                <div className="swiper-button-prev"></div>
+                <div className="swiper-button-next"></div>
             </section>
         </>
     )
