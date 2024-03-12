@@ -203,6 +203,81 @@
 .wantIMG:last-child {
   position: absolute;
 }
+
+
+
+
+
+
+
+.wantIMG:nth-child(1) {
+  transition: all 0.3s;
+  animation: fade 18s infinite; /* Интервал 8 секунд */
+}
+@keyframes fade {
+  0%, 25%{
+    z-index: 5;
+  }
+  25%, 100%{
+    z-index: 1;
+  }
+}
+.wantIMG:nth-child(2) {
+  transition: all 0.3s;
+  animation: fade1 18s infinite; /* Интервал 8 секунд */
+}
+@keyframes fade1 {
+  0%, 25%{
+    z-index: 1;
+  }
+  25%, 50%{
+    z-index: 5;
+  }
+  50%, 100%{
+    z-index: 1;
+  }
+}
+.wantIMG:nth-child(3) {
+  transition: all 0.3s;
+  animation: fade2 18s infinite; /* Интервал 8 секунд */
+}
+@keyframes fade2 {
+  0%, 50%{
+    z-index: 1;
+  }
+  50%, 75%{
+    z-index: 5;
+  }
+  75%, 100%{
+    z-index: 1;
+  }
+}
+.wantIMG:nth-child(4) {
+  transition: all 0.3s;
+  animation: fade3 18s infinite; /* Интервал 8 секунд */
+}
+@keyframes fade3 {
+  0%, 75%{
+    z-index: 1;
+  }
+  75%, 99%{
+    z-index: 5;
+  }
+  99%, 100%{
+    z-index: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 .wrapperWantInfo {
   display: flex;
   flex-direction: column;
