@@ -1,27 +1,28 @@
 import PropertiesIMG from '../assets/propertiesSlide.webp'
 import userProperties from '../assets/userProperties.webp'
 import './Properties.css'
-import Swiper from 'swiper/bundle'
-import 'swiper/css/bundle';
-
-// eslint-disable-next-line no-unused-vars
-const swiperProperties = new Swiper('.swiper', {
-    direction: 'horizontal',
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-})
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, EffectCoverflow } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-coverflow';
 
 
 export default function PropertiesSlider() {
     return (
         <>
-            <section className='PropertiesSlider swiper'>
-                <ul className="wrapperSlideProperties swiper-wrapper">
-                    <li className="slideProperties swiper-slide">
-                        <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" />
+            <section className='PropertiesSlider' id='PropertiesSlider'>
+                    <Swiper
+                        spaceBetween={30}
+                        loop={true}
+                    slidesPerView={3}
+                    effect='coverflow'
+                        navigation
+                        modules={[Navigation, EffectCoverflow]}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}>
+                    <SwiperSlide className="slideProperties">
+                        <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" width={250} height={560} />
                         <article className='wrapperPropertiesInfo'>
                             <div className="wrapperAgentInfo">
                                 <img src={userProperties} alt="User" className="userPhotoIMG" />            
@@ -37,9 +38,9 @@ export default function PropertiesSlider() {
                             <h4 className="titlePriceCardProperties">&#163; 580,660</h4>
                             <a href="#" className="linkToReviewsCardProperties">view property</a>
                         </article>
-                    </li>
-                    <li className="slideProperties swiper-slide">
-                        <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" />
+                    </SwiperSlide>
+                    <SwiperSlide className="slideProperties">
+                        <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" width={250} height={560} />
                         <article className='wrapperPropertiesInfo'>
                             <div className="wrapperAgentInfo">
                                 <img src={userProperties} alt="User" className="userPhotoIMG" />            
@@ -55,9 +56,9 @@ export default function PropertiesSlider() {
                             <h4 className="titlePriceCardProperties">&#163; 580,660</h4>
                             <a href="#" className="linkToReviewsCardProperties">view property</a>
                         </article>
-                    </li>
-                    <li className="slideProperties swiper-slide">
-                        <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" />
+                    </SwiperSlide>
+                    <SwiperSlide className="slideProperties">
+                        <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" width={250} height={560} />
                         <article className='wrapperPropertiesInfo'>
                             <div className="wrapperAgentInfo">
                                 <img src={userProperties} alt="User" className="userPhotoIMG" />
@@ -73,9 +74,9 @@ export default function PropertiesSlider() {
                             <h4 className="titlePriceCardProperties">&#163; 580,660</h4>
                             <a href="#" className="linkToReviewsCardProperties">view property</a>
                         </article>
-                    </li>
-                    <li className="slideProperties swiper-slide">
-                        <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" />
+                    </SwiperSlide>
+                    <SwiperSlide className="slideProperties">
+                        <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" width={250} height={560} />
                         <article className='wrapperPropertiesInfo'>
                             <div className="wrapperAgentInfo">
                                 <img src={userProperties} alt="User" className="userPhotoIMG" />
@@ -91,9 +92,9 @@ export default function PropertiesSlider() {
                             <h4 className="titlePriceCardProperties">&#163; 580,660</h4>
                             <a href="#" className="linkToReviewsCardProperties">view property</a>
                         </article>
-                    </li>
-                    <li className="slideProperties swiper-slide">
-                        <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" />
+                    </SwiperSlide>
+                    <SwiperSlide className="slideProperties">
+                        <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" width={250} height={560} />
                         <article className='wrapperPropertiesInfo'>
                             <div className="wrapperAgentInfo">
                                 <img src={userProperties} alt="User" className="userPhotoIMG" />
@@ -109,10 +110,8 @@ export default function PropertiesSlider() {
                             <h4 className="titlePriceCardProperties">&#163; 580,660</h4>
                             <a href="#" className="linkToReviewsCardProperties">view property</a>
                         </article>
-                    </li>
-                </ul>
-                <div className="swiper-button-prev"></div>
-                <div className="swiper-button-next"></div>
+                        </SwiperSlide>
+                        </Swiper>
             </section>
         </>
     )

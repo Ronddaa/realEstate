@@ -1,10 +1,50 @@
-.PropertiesSlider{
-    overflow: hidden;
+.PropertiesSlider {
+  overflow: hidden;
 }
-.wrapperSlideProperties{
-    display: flex;
-    gap: 30px;   
+.PropertiesSlider .slideProperties {
+  display: flex;
+  max-width: 671px;
+  max-height: 560px;
+  width: auto;
 }
-.slideProperties{
-    display: flex;
+.wrapperPropertiesInfo {
+  padding: 30px 40px 52px;
+  background-color: #f5b201;
+}
+.wrapperAgentInfo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 52px;
+}
+.textUserCommentProperties {
+  font-size: 1rem;
+}
+.titleAboutCardProperties {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.textAboutCardPropetries {
+  font-size: 1rem;
+  margin-bottom: 70px;
+}
+.wrapperLostCardProperties {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: disc;
+  margin-bottom: 51px;
+}
+.titlePriceCardProperties {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 60px;
+}
+.linkToReviewsCardProperties {
+  color: #000;
+  border-bottom: 1px solid #575757;
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: #000;
 }
