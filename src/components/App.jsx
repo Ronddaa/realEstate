@@ -1,11 +1,13 @@
 import './App.css'
 import heroIMG from '../assets/heroIMG.webp'
 import saleIMG from '../assets/sale.webp'
+import agentIMG from '../assets/agent.webp'
 import wantIMG1 from '../assets/wantSection1.webp'
 import wantIMG2 from '../assets/wantSection2.webp'
 import wantIMG3 from '../assets/wantSection3.webp'
 import wantIMG4 from '../assets/wantSection4.webp'
 import PropertiesSlider from './Properties'
+import Reviews from './Reviews'
 
 function MainTitle() {
   return (
@@ -103,6 +105,45 @@ export default function App() {
             <button className='mainContactBtn mainContactBtnY'>Join us</button>
           </article>
         </div>
+      </section>
+      <section className='agentsSection'>
+        <div className="container">
+          <h2 className="titleAgents">our agents</h2>
+          <ul className="wrapperAgentsList">
+            <li className="wrapperAgent">
+              <img src={agentIMG} alt="Agent" className="agentsIMG" />
+              <article className='wrapperAgentsInfo'>
+                <h3 className="titleAgentsName">Eva Smith</h3>
+                <p className="textAgentPos">Agent</p>
+                <a href="tel:+02037657788" className="phoneAgentsLink">+ 020 - 3765 - 7788</a>
+                <a href="#" className="profileAgentsLink">view profile</a>
+              </article>
+            </li>
+            <li className="wrapperAgent">
+              <img src={agentIMG} alt="Agent" className="agentsIMG" />
+              <article className='wrapperAgentsInfo'>
+                <h3 className="titleAgentsName">Eva Smith</h3>
+                <p className="textAgentPos">Agent</p>
+                <a href="tel:+02037657788" className="phoneAgentsLink">+ 020 - 3765 - 7788</a>
+                <a href="#" className="profileAgentsLink">view profile</a>
+              </article>
+            </li>
+            <li className="wrapperAgent">
+              <img src={agentIMG} alt="Agent" className="agentsIMG" />
+              <article className='wrapperAgentsInfo'>
+                <h3 className="titleAgentsName">Eva Smith</h3>
+                <p className="textAgentPos">Agent</p>
+                <a href="tel:+02037657788" className="phoneAgentsLink">+ 020 - 3765 - 7788</a>
+                <a href="#" className="profileAgentsLink">view profile</a>
+              </article>
+            </li>
+          </ul>
+          <a href="#" className="allAgentsLink">all agents</a>
+        </div>
+      </section>
+      <section className='reviewsSection'>
+        <h2 className="titleReviews">Reviews</h2>
+        <Reviews />
       </section>
     </>  
   )

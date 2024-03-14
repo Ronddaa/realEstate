@@ -72,10 +72,13 @@
 
 .titleAboutUs,
 .titleProperties,
-.titleWant {
+.titleWant,
+.titleAgents,
+.titleReviews {
   font-size: 3vw;
   font-weight: 500;
   margin-bottom: 100px;
+  text-transform: uppercase;
 }
 .textAboutUs,
 .textWant {
@@ -178,7 +181,6 @@
 }
 .titleWant {
   color: #f5b201;
-  text-transform: uppercase;
   text-align: center;
   margin-bottom: 65px;
 }
@@ -198,85 +200,60 @@
   height: 100%;
   max-height: 642px;
 }
+.wantIMG {
+  position: relative;
+  z-index: 1;
+  transition: z-index 0.3s;
+}
 .wantIMG:nth-child(2),
 .wantIMG:nth-child(3),
 .wantIMG:last-child {
   position: absolute;
 }
 
-
-
-
-
-
-
-.wantIMG:nth-child(1) {
-  transition: all 0.3s;
-  animation: fade 18s infinite; /* Интервал 8 секунд */
-}
 @keyframes fade {
-  0%, 25%{
+  0% {
     z-index: 5;
   }
-  25%, 100%{
+  25%,
+  100% {
     z-index: 1;
   }
 }
-.wantIMG:nth-child(2) {
-  transition: all 0.3s;
-  animation: fade1 18s infinite; /* Интервал 8 секунд */
-}
+
+/* Анимация для каждого изображения */
 @keyframes fade1 {
-  0%, 25%{
-    z-index: 1;
-  }
-  25%, 50%{
+  25%,
+  50% {
     z-index: 5;
   }
-  50%, 100%{
-    z-index: 1;
-  }
-}
-.wantIMG:nth-child(3) {
-  transition: all 0.3s;
-  animation: fade2 18s infinite; /* Интервал 8 секунд */
 }
 @keyframes fade2 {
-  0%, 50%{
-    z-index: 1;
-  }
-  50%, 75%{
+  50%,
+  75% {
     z-index: 5;
   }
-  75%, 100%{
-    z-index: 1;
-  }
-}
-.wantIMG:nth-child(4) {
-  transition: all 0.3s;
-  animation: fade3 18s infinite; /* Интервал 8 секунд */
 }
 @keyframes fade3 {
-  0%, 75%{
-    z-index: 1;
-  }
-  75%, 99%{
+  75%,
+  99% {
     z-index: 5;
-  }
-  99%, 100%{
-    z-index: 1;
   }
 }
 
-
-
-
-
-
-
-
-
-
+/* Применяем анимацию к каждому изображению */
+.wantIMG:nth-child(1) {
+  animation: fade 12s infinite;
+}
+.wantIMG:nth-child(2) {
+  animation: fade1 12s infinite;
+}
+.wantIMG:nth-child(3) {
+  animation: fade2 12s infinite;
+}
+.wantIMG:nth-child(4) {
+  animation: fade3 12s infinite;
+}
 
 .wrapperWantInfo {
   display: flex;
@@ -301,3 +278,57 @@
 }
 
 /* wantSection END */
+/* agentsSection START */
+
+.wrapperAgentsList {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 44px;
+}
+.agentsIMG {
+  filter: grayscale(100%);
+  margin-bottom: 25px;
+}
+.wrapperAgentsInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.titleAgentsName {
+  font-size: 1.9vw;
+  text-transform: uppercase;
+}
+.textAgentPos {
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+.phoneAgentsLink,
+.profileAgentsLink,
+.allAgentsLink {
+  color: #000;
+  font-size: 1.1vw;
+  transition: 0.3s;
+}
+.profileAgentsLink,
+.allAgentsLink {
+  text-decoration: underline;
+}
+.profileAgentsLink:hover,
+.allAgentsLink:hover,
+.profileAgentsLink:focus,
+.allAgentsLink:focus,
+.phoneAgentsLink:hover,
+.phoneAgentsLink:focus {
+  font-weight: 600;
+  color: #2b2e35;
+}
+
+/* agentsSection END */
+/* reviewsSection START */
+
+.titleReviews{
+  text-align: center;
+}
+
+/* reviewsSection END */

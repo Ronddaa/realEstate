@@ -18,9 +18,7 @@ export default function PropertiesSlider() {
                     slidesPerView={3}
                     effect='coverflow'
                         navigation
-                        modules={[Navigation, EffectCoverflow]}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}>
+                        modules={[Navigation, EffectCoverflow]}>
                     <SwiperSlide className="slideProperties">
                         <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" width={250} height={560} />
                         <article className='wrapperPropertiesInfo'>
