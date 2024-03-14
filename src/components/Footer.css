@@ -1,0 +1,42 @@
+footer {
+  background-color: #2b2e35;
+  padding: 70px 50px 0;
+}
+.wrapperFooterNav {
+  display: flex;
+  margin-bottom: 95px;
+  justify-content: space-between;
+  max-width: 70%;
+}
+.footerNavLink {
+  color: #f5b201;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 5px;
+  font-size: 1.2vw;
+  transition: 0.3s;
+}
+.footerNavLink:hover,
+.footerNavLink:focus {
+  color: #cd9600;
+  text-shadow: 0px 0px 18px rgb(255, 221, 129);
+}
+.wrapperFormContacts {
+  display: flex;
+  justify-content: space-between;
+}
+.footerForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.labelInput {
+  position: relative;
+  display: block;
+}
+.inputUserDate {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  padding: 10px;
+}

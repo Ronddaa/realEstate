@@ -8,6 +8,7 @@ import wantIMG3 from '../assets/wantSection3.webp'
 import wantIMG4 from '../assets/wantSection4.webp'
 import PropertiesSlider from './Properties'
 import Reviews from './Reviews'
+import Footer from './Footer'
 
 function MainTitle() {
   return (
@@ -145,6 +146,7 @@ export default function App() {
         <h2 className="titleReviews">Reviews</h2>
         <Reviews />
       </section>
+      <Footer />
     </>  
   )
 }
