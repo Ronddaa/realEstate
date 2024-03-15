@@ -45,11 +45,11 @@ export default function Footer() {
                                 <span className="textInInput">last name</span>
                             </label>
                             <label htmlFor="inputForUserEmail" className="labelInput">
-                                <input type="text" className="inputUserDate" id="inputForUserEmail" required />
+                                <input type="email" className="inputUserDate" id="inputForUserEmail" required />
                                 <span className="textInInput">e-mail</span>
                             </label>
                             <label htmlFor="inputForUserPhone" className="labelInput">
-                                <input type="text" className="inputUserDate" id="inputForUserPhone" required />
+                                <input type="phone" className="inputUserDate" id="inputForUserPhone" required />
                                 <span className="textInInput">phone number</span>
                             </label>
                             <label htmlFor="inputForUserCity" className="labelInput">
@@ -80,11 +80,11 @@ export default function Footer() {
                             </div>
                         </article>
                     </div>
-                    <div className="policy">
-                        <p className="textPolicyFooter">GBN & partners All rights reserved</p>
-                        <p className="textPolicyFooter">privacy policy</p>
-                    </div>
             </footer>
+            <div className="policyFooter">
+                <p className="textPolicyFooter">GBN & partners All rights reserved</p>
+                <p className="textPolicyFooter">privacy policy</p>
+            </div>
         </>
     )
 }

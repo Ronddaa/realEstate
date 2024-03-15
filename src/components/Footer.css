@@ -1,6 +1,7 @@
 footer {
   background-color: #2b2e35;
   padding: 70px 50px 0;
+  position: relative;
 }
 .wrapperFooterNav {
   display: flex;
@@ -26,17 +27,173 @@ footer {
   justify-content: space-between;
 }
 .footerForm {
+  width: 60%;
+  margin-bottom: 70px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 0fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
+.labelInput:first-child {
+  grid-area: 1 / 1 / 2 / 3;
+}
+.labelInput:nth-child(2) {
+  grid-area: 2 / 1 / 3 / 3;
+}
+.labelInput:nth-child(3) {
+  grid-area: 3 / 1 / 4 / 3;
+}
+.labelInput:nth-child(4) {
+  grid-area: 1 / 3 / 2 / 5;
+}
+.labelInput:nth-child(5) {
+  grid-area: 2 / 3 / 3 / 5;
+}
+.labelInput:nth-child(6) {
+  grid-area: 3 / 3 / 4 / 5;
+}
+.formFooterBtn {
+  grid-area: 4 / 1 / 5 / 3;
+}
+
 .labelInput {
   position: relative;
   display: block;
+  border-bottom: 1px solid #484848;
+  height: 40px;
+  width: 100%;
 }
 .inputUserDate {
   background-color: transparent;
   border: none;
+  outline: none;
   position: absolute;
   padding: 10px;
+  width: 100%;
+  font-size: 1.1vw;
+  bottom: 0;
+  color: #f5b201;
+}
+.textInInput {
+  color: #cd9600;
+  font-size: 1vw;
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: text;
+}
+.labelInput .inputUserDate:focus + .textInInput,
+.labelInput .inputUserDate:valid + .textInInput {
+  top: -18%;
+  font-size: 0.8vw;
+  background-color: #2b2e35;
+  padding: 0 5px;
+  color: #cd9600;
+  font-weight: 400;
+}
+.formFooterBtn {
+  background-color: transparent;
+  border: none;
+  width: 17vw;
+  font-size: 1.1vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 70px;
+  padding: 12px;
+  color: #f5b201;
+}
+.formFooterBtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 30px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  transition: 0.3s;
+}
+.formFooterBtn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 30px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  transition: 0.3s;
+}
+.formFooterBtn:hover::before,
+.formFooterBtn:focus::before,
+.formFooterBtn:hover::after,
+.formFooterBtn:focus::after {
+  width: 105%;
+  height: 110%;
+}
+.wrapperOurLocation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: left;
+  position: relative;
+  width: 30%;
+  margin-bottom: 70px;
+}
+.titleFooterLondon {
+  font-size: 3vw;
+  color: #f5b201;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #484848;
+}
+.linkToCallUsFooter,
+.textOurLocation {
+  color: #f5b201;
+  font-size: 1vw;
+  transition: 0.3s;
+}
+.linkToCallUsFooter:hover, .linkToCallUsFooter:focus{
+    color: #cd9600;
+    text-shadow: 0px 0px 18px rgb(255, 221, 129);
+}
+.wrapperSocialLinksFooter {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  max-width: 50%;
+  gap: 40%;
+}
+.linkToSocialFooter {
+  background-color: #f5b201;
+  border-radius: 50%;
+  padding: 20px;
+  position: relative;
+  transition: 0.3s;
+}
+.linkToSocialFooter:hover, .linkToSocialFooter:focus{
+    background-color: #fff;
+}
+.iconToSocialFooter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.policyFooter {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5b201;
+  padding: 25px 50px;
+  text-transform: uppercase;
+}
+.textPolicyFooter {
+  font-size: 1.2vw;
 }
