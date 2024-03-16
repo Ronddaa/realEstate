@@ -1,10 +1,63 @@
-.titleOurTeamSection{
-    font-size: 10.7vw;
+.titleOurTeamSection {
+  font-size: 17vw;
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
   margin-bottom: 20px;
 }
-.titleOurTeamSection > span{
-    color: #f5b201;
+.titleOurTeamSection > span {
+  color: #f5b201;
+}
+.wrapperMainBtnTeam {
+  justify-content: center;
+  gap: 80px;
+}
+.ourTeamHeroIMG {
+  width: 100%;
+}
+.titleOurStory {
+  font-size: 3vw;
+  font-weight: 500;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+}
+.textOurStory {
+  max-width: 70%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 88px;
+  font-size: 1vw;
+}
+.textOurStory > span {
+  font-weight: 700;
+}
+.wrapperOurPlus {
+  display: flex;
+  justify-content: space-between;
+}
+.ourPlus {
+  width: calc((100% - 100px) / 3);
+  display: flex;
+  gap: 10px;
+}
+.titleOurPlusNumbers {
+  font-weight: 900;
+  color: #fed152;
+  font-size: 7vw;
+}
+.gfdgwrvdsvbetrwsxcv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: end;
+}
+.titleAboutUsTeam {
+  font-size: 1.2vw;
+  text-transform: uppercase;
+}
+.gfdgwrvdsvbetrwsxcv > p {
+  text-transform: uppercase;
+  font-size: 0.8vw;
 }

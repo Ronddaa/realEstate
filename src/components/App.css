@@ -36,6 +36,7 @@
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
+  padding: 10px;
 }
 .mainContactBtn::before {
   content: '';
@@ -325,10 +326,3 @@
 }
 
 /* agentsSection END */
-/* reviewsSection START */
-
-.titleReviews{
-  text-align: center;
-}
-
-/* reviewsSection END */

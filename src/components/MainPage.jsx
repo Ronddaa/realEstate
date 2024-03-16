@@ -11,7 +11,7 @@ import Reviews from './Reviews'
 import Footer from './Footer'
 import Header from './Header'
 
-function MainTitle() {
+export function MainTitle() {
   return (
   <h1 className="mainTitle"><span>GBN &</span> partners</h1>
   )
