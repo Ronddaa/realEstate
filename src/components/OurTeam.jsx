@@ -1,6 +1,7 @@
 import '../components/OurTeam.css'
 import Header from './Header'
 import OurTeamHeroIMG from '../assets/ourTeamMain.webp'
+import OurPlusInfoIMG from '../assets/OurPlusInfoIMG.webp'
 
 export default function OurTeam() {
     return (
@@ -41,6 +42,16 @@ export default function OurTeam() {
                                 <h4 className="titleAboutUsTeam">Trust and transparency</h4>
                                 <p>Customer relationships are based on openness and trust. We are committed to providing you with the information and guidance you need to make informed decisions.</p>
                             </div>
+                        </li>
+                    </ul>
+                    <ul className="wrapperInfoAboutUs">
+                        <li className="infoAboutUsTeam">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            <img className='infoAboutUsTeamIMG' src={OurPlusInfoIMG} alt="People" />
+                        </li>
+                        <li className="infoAboutUsTeam">
+                            <img className='infoAboutUsTeamIMG' src={OurPlusInfoIMG} alt="People" />                            
+                            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         </li>
                     </ul>
                 </div>
