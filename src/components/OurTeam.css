@@ -1,0 +1,10 @@
+.titleOurTeamSection{
+    font-size: 10.7vw;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+.titleOurTeamSection > span{
+    color: #f5b201;
+}
