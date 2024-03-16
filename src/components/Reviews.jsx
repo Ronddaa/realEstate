@@ -14,9 +14,7 @@ export default function Reviews() {
                 slidesPerView={2.5}
                 effect='card'
                 navigation  
-                modules={[Navigation, EffectCoverflow]}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}>
+                modules={[Navigation, EffectCoverflow]}>
                 
                     <SwiperSlide>
                         <article className="wrapperReviews">
