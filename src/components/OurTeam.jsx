@@ -2,6 +2,9 @@ import '../components/OurTeam.css'
 import Header from './Header'
 import OurTeamHeroIMG from '../assets/ourTeamMain.webp'
 import OurPlusInfoIMG from '../assets/OurPlusInfoIMG.webp'
+import OurPeopleTeamIMG from '../assets/agent.webp'
+import PropertiesSlider from './Properties'
+import Footer from './Footer'
 
 export default function OurTeam() {
     return (
@@ -46,16 +49,68 @@ export default function OurTeam() {
                     </ul>
                     <ul className="wrapperInfoAboutUs">
                         <li className="infoAboutUsTeam">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                            <img className='infoAboutUsTeamIMG' src={OurPlusInfoIMG} alt="People" />
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br /> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                            <div><img className='infoAboutUsTeamIMG' src={OurPlusInfoIMG} alt="People" width={842} height={670} /></div>
                         </li>
                         <li className="infoAboutUsTeam">
-                            <img className='infoAboutUsTeamIMG' src={OurPlusInfoIMG} alt="People" />                            
-                            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <div><img className='infoAboutUsTeamIMG' src={OurPlusInfoIMG} alt="People" width={842} height={670} /></div>                            
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br /> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         </li>
                     </ul>
                 </div>
             </section>
+            <section className='ourTeamSection'>
+                <div className="container">
+                    <h2 className="titleOurTeam">Our Team</h2>
+                    <ul className="wrapperOurTeamPeople">
+                        <li className="OurPeopleTeam">
+                            <img src={OurPeopleTeamIMG} alt="People" className="ourPeopleTeamIMG" width={504} height={585} />
+                            <h3 className="titlePeopleNameTeam">Gabriella nazar</h3>
+                            <p className="textAboutPosPeople">Founder</p>
+                        </li>
+                        <li className="OurPeopleTeam">
+                            <img src={OurPeopleTeamIMG} alt="People" className="ourPeopleTeamIMG" width={504} height={585} />
+                            <h3 className="titlePeopleNameTeam">bohdan mysiuk</h3>
+                            <p className="textAboutPosPeople">Founder</p>
+                        </li>
+                        <li className="OurPeopleTeam">
+                            <img src={OurPeopleTeamIMG} alt="People" className="ourPeopleTeamIMG" width={504} height={585} />
+                            <h3 className="titlePeopleNameTeam">nestor mytskan</h3>
+                            <p className="textAboutPosPeople">Founder</p>
+                        </li>
+                        <li className="OurPeopleTeam">
+                            <img src={OurPeopleTeamIMG} alt="People" className="ourPeopleTeamIMG" width={504} height={585} />
+                            <h3 className="titlePeopleNameTeam">SABINA KLARKSON</h3>
+                            <p className="textAboutPosPeople">Founder</p>
+                        </li>
+                        <li className="OurPeopleTeam">
+                            <img src={OurPeopleTeamIMG} alt="People" className="ourPeopleTeamIMG" width={504} height={585} />
+                            <h3 className="titlePeopleNameTeam">SABINA KLARKSON</h3>
+                            <p className="textAboutPosPeople">Founder</p>
+                        </li>
+                        <li className="OurPeopleTeam">
+                            <img src={OurPeopleTeamIMG} alt="People" className="ourPeopleTeamIMG" width={504} height={585} />
+                            <h3 className="titlePeopleNameTeam">SABINA KLARKSON</h3>
+                            <p className="textAboutPosPeople">Founder</p>
+                        </li>
+                        <li className="OurPeopleTeam">
+                            <img src={OurPeopleTeamIMG} alt="People" className="ourPeopleTeamIMG" width={504} height={585} />
+                            <h3 className="titlePeopleNameTeam">SABINA KLARKSON</h3>
+                            <p className="textAboutPosPeople">Founder</p>
+                        </li>
+                        <li className="OurPeopleTeam">
+                            <img src={OurPeopleTeamIMG} alt="People" className="ourPeopleTeamIMG" width={504} height={585} />
+                            <h3 className="titlePeopleNameTeam">SABINA KLARKSON</h3>
+                            <p className="textAboutPosPeople">Founder</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2 className="titleRealEstateOfOurAgents">real estate of our agents</h2>
+                <PropertiesSlider />
+            </section>
+            <Footer />
         </>
     )
 }
