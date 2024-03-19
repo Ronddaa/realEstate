@@ -1,0 +1,43 @@
+.titleAgentsComponent {
+  font-size: 22vw;
+  font-weight: 900;
+}
+.titleAgentsComponent > span {
+  color: #f5b201;
+}
+.wrapperMainBtnAgents {
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.agentsHeroIMG {
+  width: 100%;
+}
+.titleOurAgents {
+  font-size: 3vw;
+  font-weight: 500;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+}
+.wrapperSearchAgents {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.inputSearchAgent {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #8f8e8e;
+  padding: 5px;
+  font-size: 1.1vw;
+  width: calc((100% - 200px) / 3);
+}
+.linkToProfileThisAgent {
+  color: #000;
+  font-size: 1.1vw;
+  text-decoration: underline;
+}
+.linkToProfileThisAgent:hover,
+.linkToProfileThisAgent:focus {
+  font-weight: 500;
+}

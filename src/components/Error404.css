@@ -1,0 +1,66 @@
+.ErrorSection {
+  position: relative;
+  background-image: url(../assets/errorIMG.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5%;
+  margin-bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 40px;
+}
+.titleErrorPage {
+  font-size: 3vw;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.titleErrorPageN {
+  font-size: 15vw;
+  font-weight: 900;
+}
+.titleErrorPageN > span {
+  color: #f5b201;
+}
+.linkToMainPageBtnError {
+  background-color: transparent;
+  border: none;
+  width: 17vw;
+  font-size: 1.1vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  padding: 10px;
+  margin: 0 auto;
+}
+.linkToMainPageBtnError::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 30px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  transition: 0.3s;
+}
+.linkToMainPageBtnError::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 30px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  transition: 0.3s;
+}
+.linkToMainPageBtnError:hover::before,
+.linkToMainPageBtnError:hover::after,
+.linkToMainPageBtnError:focus::before,
+.linkToMainPageBtnError:focus::after {
+  width: 105%;
+  height: 110%;
+}
