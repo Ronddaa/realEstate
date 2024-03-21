@@ -10,6 +10,8 @@ import PropertiesSlider from './Properties'
 import Reviews from './Reviews'
 import Footer from './Footer'
 import Header from './Header'
+import { ModalJoinUs } from './Modals'
+
 
 export function MainTitle() {
   return (
@@ -19,8 +21,7 @@ export function MainTitle() {
 
 export default function MainPage() {
     return (
-        <>
-            <>
+      <>
       <Header />
     <section className='heroSection'>
       <div className="container">
@@ -30,7 +31,7 @@ export default function MainPage() {
             <p className="heroMainText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
           <div className='wrapperMainBtn'>
-            <button className='mainContactBtn'>Join us</button>
+            <button className='mainContactBtn' id='mainContactBtnJoinUs' onClick={ModalJoinUs}>Join us</button>
             <button className='mainContactBtn'>Contact agent</button>
           </div>
         </div>
@@ -151,6 +152,5 @@ export default function MainPage() {
       </section>
       <Footer />
     </>
-        </>
     )
 }

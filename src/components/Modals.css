@@ -1,0 +1,104 @@
+.classIsOpenModalWindow{
+    display: block;
+}
+
+.modalWindowJoinUs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  transition: 0.3s;
+  z-index: 999;
+}
+.modalContentJoinUs {
+  display: flex;
+  max-width: 687px;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  border: none;
+  transform: translate(-50%, -50%);
+}
+.modalJoinUsIMG {
+  width: 100%;
+}
+.modalContentJoinUs > article {
+  padding: 60px 33px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #2b2e35;
+  justify-content: space-between;
+}
+.titleModalJoinUs {
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.textModalJoinUs {
+  font-size: 0.8vw;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.formModalJoinUs {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.labelInputModalJoinUs {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #484848;
+  height: 40px;
+  width: 100%;
+}
+.inputUserDateModalJoinUs {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  padding: 10px;
+  width: 100%;
+  font-size: 1.1vw;
+  bottom: 0;
+  color: #000000;
+  left: 0;
+}
+.textInInputModalJoinUs {
+  color: #000000;
+  font-size: 1vw;
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: text;
+  opacity: 0.7;
+}
+.labelInputModalJoinUs
+  .inputUserDateModalJoinUs:focus
+  + .textInInputModalJoinUs,
+.labelInputModalJoinUs
+  .inputUserDateModalJoinUs:valid
+  + .textInInputModalJoinUs {
+  top: -18%;
+  font-size: 0.8vw;
+  background-color: #ffffff;
+  padding: 0 5px;
+  color: #000000;
+  font-weight: 400;
+}
+.mainContactBtnModalJoinUs {
+  position: relative;
+  bottom: 0;
+  margin: 0 auto;
+}
