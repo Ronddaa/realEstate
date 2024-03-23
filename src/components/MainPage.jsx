@@ -11,6 +11,8 @@ import Reviews from './Reviews'
 import Footer from './Footer'
 import Header from './Header'
 import { ModalJoinUs } from './Modals'
+import modalJoinUsIMG from '../assets/modalJoinUsIMG.webp'
+import { useState } from 'react'
 
 
 export function MainTitle() {
@@ -20,6 +22,7 @@ export function MainTitle() {
 }
 
 export default function MainPage() {
+  const [modalPrizeIsOpen, setModalPrizeOpen] = useState(false);
     return (
       <>
       <Header />
@@ -31,7 +34,7 @@ export default function MainPage() {
             <p className="heroMainText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
           <div className='wrapperMainBtn'>
-            <button className='mainContactBtn' id='mainContactBtnJoinUs' onClick={ModalJoinUs}>Join us</button>
+            <button className='mainContactBtn' id='mainContactBtnJoinUs' onClick={() => setModalPrizeOpen(true)}>Join us</button>
             <button className='mainContactBtn'>Contact agent</button>
           </div>
         </div>
@@ -150,7 +153,35 @@ export default function MainPage() {
         <h2 className="titleReviews">Reviews</h2>
         <Reviews />
       </section>
-      <Footer />
+        <Footer />
+        <ModalJoinUs
+          isOpen={modalPrizeIsOpen}
+          onClose={() => setModalPrizeOpen(false)}
+        >
+          <img className='modalJoinUsIMG' src={modalJoinUsIMG} alt="Building" width={287} height={757} />
+            <article>
+                <h2 className="titleModalJoinUs">join us</h2>
+                <p className="textModalJoinUs">If you are interested in partnering with us, please fill out the form below and we will be in contact.</p>
+                <form action="" className='formModalJoinUs'>
+                    <label htmlFor="inputForUserNameModalJoinUs" className="labelInputModalJoinUs">
+                        <input type="text" className="inputUserDateModalJoinUs" id="inputForUserNameModalJoinUs" required />
+                        <span className="textInInputModalJoinUs">first name</span>
+                    </label>
+                    <label htmlFor="inputForUserSNameModalJoinUs" className="labelInputModalJoinUs">
+                        <input type="text" className="inputUserDateModalJoinUs" id="inputForUserSNameModalJoinUs" required />
+                        <span className="textInInputModalJoinUs">last name</span>
+                    </label>
+                    <label htmlFor="inputForUserEmailModalJoinUs" className="labelInputModalJoinUs">
+                        <input type="email" className="inputUserDateModalJoinUs" id="inputForUserEmailModalJoinUs" required />
+                        <span className="textInInputModalJoinUs">e-mail</span>
+                    </label>
+                    <label htmlFor="inputForUserPhoneModalJoinUs" className="labelInputModalJoinUs">
+                        <input type="phone" className="inputUserDateModalJoinUs" id="inputForUserPhoneModalJoinUs" required />
+                        <span className="textInInputModalJoinUs">phone number</span>
+                    </label>
+                </form>
+            </article>
+        </ModalJoinUs>
     </>
     )
 }
