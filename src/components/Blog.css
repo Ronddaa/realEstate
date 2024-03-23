@@ -1,0 +1,42 @@
+.titleBlog {
+  font-size: 25vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 0.9;
+  text-align: center;
+}
+.titleBlog > span {
+  color: #f5b201;
+}
+.wrapperMainBtnBlog {
+  justify-content: center;
+}
+.heroBlogIMG {
+  width: 100%;
+}
+.wrapperLastNews {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  position: relative;
+  z-index: 2;
+}
+.wrapperLastNewsIMG {
+  max-width: 50%;
+}
+.wrapperLastNewsIMG::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -5%;
+  right: -5%;
+  background-color: #f5b201;
+  z-index: -1;
+}
+.wrapperLastNewsInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 50%;
+}
