@@ -18,11 +18,10 @@
   display: flex;
   justify-content: space-between;
   gap: 5%;
-  position: relative;
-  z-index: 2;
 }
 .wrapperLastNewsIMG {
   max-width: 50%;
+  position: relative;
 }
 .wrapperLastNewsIMG::before {
   content: '';
@@ -39,4 +38,17 @@
   flex-direction: column;
   gap: 30px;
   max-width: 50%;
+}
+.textDateOfPublication {
+  font-size: 1vw;
+  text-transform: uppercase;
+}
+.titleLastNews {
+  text-transform: uppercase;
+  font-size: 2.1vw;
+  font-weight: 500;
+}
+.ingoAboutNews {
+  font-size: 1vw;
+  margin-bottom: 20px;
 }
