@@ -1,30 +1,30 @@
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url("./assets/Inter-Regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./assets/Inter-Regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  src: url("./assets/Inter-Medium.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./assets/Inter-Medium.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  src: url("./assets/Inter-SemiBold.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./assets/Inter-SemiBold.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: url("./assets/Inter-Bold.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./assets/Inter-Bold.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 *,
 *::before,
@@ -35,7 +35,7 @@
 html {
   scroll-behavior: smooth; /* Для плавного скролла по якорям и по сайту */
   color: #000;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 section {
   position: relative; /* делаем позиционирование в секциях, удобно для размещения абсолютных блоков */
@@ -73,21 +73,26 @@ img {
   margin: 0 auto 50px;
   padding: 0 3%;
 }
-section{
+section {
   margin-bottom: 120px;
 }
 
 /* HEADER START */
 
 header {
-  padding: 24px 50px;
+  padding: 2% 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1%;
+}
+header > nav {
+  width: 100%;
 }
 .headerWrapperNav {
   display: flex;
-  gap: 45px;
+  justify-content: center;
+  gap: 4%;
 }
 .headerNavLinks {
   color: #000;
@@ -110,7 +115,8 @@ header {
   transition: 0.3s;
   white-space: nowrap;
 }
-.headerBookingBtn:hover, .headerBookingBtn:focus{
+.headerBookingBtn:hover,
+.headerBookingBtn:focus {
   color: #d09900;
 }
 
@@ -118,7 +124,7 @@ header {
 
 /* MODAL WINDOW */
 
-.classIsOpenModalWindow{
-    display: block;
-    opacity: 1;
+.classIsOpenModalWindow {
+  display: block;
+  opacity: 1;
 }
