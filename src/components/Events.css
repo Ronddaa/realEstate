@@ -1,0 +1,67 @@
+.titleEvents {
+  font-size: 23vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+.titleEvents > span {
+  color: #f5b201;
+}
+.wrapperMainBtnEvents {
+  justify-content: center;
+}
+.eventsHeroIMG {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.wrapperNextEvents {
+  display: flex;
+  gap: 7%;
+}
+.eventsCard {
+  display: flex;
+  justify-content: space-between;
+}
+.eventsCard > article {
+  max-width: 50%;
+  border: 1px solid #000;
+}
+.eventCardArticleIMG {
+  background-image: url(../assets/eventsIMG.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5%;
+  color: #fff;
+}
+.titleEventCardDate {
+  font-size: 10vw;
+  max-width: 50%;
+  font-weight: 400;
+  line-height: 0.9;
+  position: relative;
+}
+.titleEventCardDate::after {
+  content: 'sun';
+  top: 0;
+  right: -85%;
+  font-size: 2vw;
+  position: absolute;
+}
+.textEventCard {
+  font-size: 2vw;
+}
+.eventCardArticle {
+  padding: 4%;
+}
+.titleEventCard {
+  font-size: 1.5vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.textEventCardInfo {
+  font-size: 1.2vw;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 40%;
+}
