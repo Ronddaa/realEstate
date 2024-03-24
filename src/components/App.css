@@ -37,6 +37,7 @@
   text-transform: uppercase;
   position: relative;
   padding: 10px;
+  color: #000;
 }
 .mainContactBtn::before {
   content: '';
