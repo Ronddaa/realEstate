@@ -36,7 +36,7 @@ export default function Blog() {
                         <li className="OldNewsCard">
                             <img src={blogOldNewsIMG} alt="News" />
                             <article className="wrapperOldNewsInfo">
-                                <p className="textDateOfPublicationOld"></p>
+                                <p className="textDateOfPublicationOld"> NOV2023</p>
                                 <h3 className="titleOldNews">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h3>
                                 <a href="#" className="linkToReadAboutOldNews">read more</a>
                             </article>
@@ -44,7 +44,7 @@ export default function Blog() {
                         <li className="OldNewsCard">
                             <img src={blogOldNewsIMG} alt="News" />
                             <article className="wrapperOldNewsInfo">
-                                <p className="textDateOfPublicationOld"></p>
+                                <p className="textDateOfPublicationOld"> NOV2023</p>
                                 <h3 className="titleOldNews">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h3>
                                 <a href="#" className="linkToReadAboutOldNews">read more</a>
                             </article>
@@ -52,7 +52,7 @@ export default function Blog() {
                         <li className="OldNewsCard">
                             <img src={blogOldNewsIMG} alt="News" />
                             <article className="wrapperOldNewsInfo">
-                                <p className="textDateOfPublicationOld"></p>
+                                <p className="textDateOfPublicationOld"> NOV2023</p>
                                 <h3 className="titleOldNews">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h3>
                                 <a href="#" className="linkToReadAboutOldNews">read more</a>
                             </article>

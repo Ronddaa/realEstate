@@ -6,6 +6,7 @@ import Membership from './Membership';
 import Agents from './Agents';
 import Blog from './Blog';
 import { Error404 } from './Error404';
+import AreaGuides from './AreaGuides';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/membership" element={<Membership />} />
         <Route path="/agents" element={<Agents />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/areaguides" element={<AreaGuides />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </>

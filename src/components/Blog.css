@@ -1,5 +1,5 @@
 .titleBlog {
-  font-size: 25vw;
+  font-size: 34vw;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 0.9;
@@ -51,4 +51,32 @@
 .ingoAboutNews {
   font-size: 1vw;
   margin-bottom: 20px;
+}
+.wrapperOldNews {
+  display: flex;
+  gap: 2%;
+}
+.OldNewsCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.wrapperOldNewsInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.linkToReadAboutOldNews {
+  color: #000;
+  text-decoration: underline;
+}
+.linkToReadAboutOldNews:hover,
+.linkToReadAboutOldNews:focus {
+  font-weight: 500;
+}
+.OldNewsCard:hover,
+.OldNewsCard:focus {
+  transform: scale(1.1);
 }

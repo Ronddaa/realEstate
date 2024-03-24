@@ -1,0 +1,52 @@
+.titleAreaGuides {
+  font-size: 13vw;
+  text-transform: uppercase;
+  text-align: center;
+}
+.titleAreaGuides > span {
+  color: #f5b201;
+}
+.wrapperMainBtnAreaguides {
+  justify-content: center;
+}
+.areaguidesHeroIMG {
+  width: 100%;
+}
+.wrapperGuidesCard {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.guidesCard {
+  display: flex;
+}
+.guidesIMG {
+  max-width: 60%;
+}
+.wrapperGuidesInfo {
+  position: relative;
+  padding: 5% 3%;
+  border: 1px solid #2c2c2c;
+  border-left: none;
+}
+.titleGuidesInfo {
+  font-size: 2vw;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.textGuidesInfo {
+  font-size: 1vw;
+  font-weight: 500;
+}
+.linkToCheckGuidesIngo {
+  position: absolute;
+  bottom: 10%;
+  color: #000;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.linkToCheckGuidesIngo:hover,
+.linkToCheckGuidesIngo:focus {
+  font-weight: 600;
+}
