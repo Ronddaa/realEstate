@@ -1,8 +1,13 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import '../components/Error404.css'
+import { useEffect } from 'react'
+
 
 export function Error404() {
+    useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутка вверх страницы при монтировании компонента
+  }, []);
     return (
         <>
             <Header />

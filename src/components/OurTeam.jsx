@@ -5,8 +5,13 @@ import OurPlusInfoIMG from '../assets/OurPlusInfoIMG.webp'
 import OurPeopleTeamIMG from '../assets/agent.webp'
 import PropertiesSlider from './Properties'
 import Footer from './Footer'
+import { useEffect } from 'react'
+
 
 export default function OurTeam() {
+    useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутка вверх страницы при монтировании компонента
+  }, []);
     return (
         <>
             <Header />

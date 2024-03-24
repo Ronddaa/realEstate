@@ -6,8 +6,13 @@ import GBNSectionIMG from '../assets/GBNSection.webp'
 import sprite from '../assets/icons.svg'
 import Footer from "./Footer";
 import PropertiesSlider from "./Properties";
+import { useEffect } from 'react'
+
 
 export default function Membership() {
+    useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутка вверх страницы при монтировании компонента
+  }, []);
     return (
         <>
             <Header />

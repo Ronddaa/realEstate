@@ -1,31 +1,31 @@
-
+import { Link } from "react-router-dom"
 
 export default function Header() {
     return (
         <header className="header" id="header">
-      <a href="#" className="mainPageLogo"><img src="./src/assets/logo.svg" alt="logo" className="mainPageLogoIMG" width="157" height="46"/></a>
+      <Link to='/' className="mainPageLogo"><img src="./src/assets/logo.svg" alt="logo" className="mainPageLogoIMG" width="157" height="46"/></Link>
       <nav>
         <ul className="headerWrapperNav">
           <li>
-            <a href="#" className="headerNavLinks">TEAM</a>
+            <Link to='/team' className="headerNavLinks">TEAM</Link>
           </li>
           <li>
-            <a href="#" className="headerNavLinks">membership</a>
+            <Link to='/membership' className="headerNavLinks">membership</Link>
           </li>
           <li>
-            <a href="#" className="headerNavLinks">PROPERTIES</a>
+            <Link to='/properties' className="headerNavLinks">PROPERTIES</Link>
           </li>
           <li>
-            <a href="#" className="headerNavLinks">AGENTS</a>
+            <Link to='/agents' className="headerNavLinks">AGENTS</Link>
           </li>
           <li>
-            <a href="#" className="headerNavLinks">BLOG</a>
+            <Link to='/blog' className="headerNavLinks">BLOG</Link>
           </li>
           <li>
-            <a href="#" className="headerNavLinks">EVENTS</a>
+            <Link to='/events' className="headerNavLinks">EVENTS</Link>
           </li>
           <li>
-            <a href="#" className="headerNavLinks">AREA GUIDES</a>
+            <Link to='/areaguides' className="headerNavLinks">AREA GUIDES</Link>
           </li>
         </ul>
       </nav>

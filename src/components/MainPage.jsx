@@ -12,7 +12,7 @@ import Footer from './Footer'
 import Header from './Header'
 import { ModalJoinUs } from './Modals'
 import modalJoinUsIMG from '../assets/modalJoinUsIMG.webp'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 export function MainTitle() {
@@ -23,6 +23,9 @@ export function MainTitle() {
 
 export default function MainPage() {
   const [modalPrizeIsOpen, setModalPrizeOpen] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутка вверх страницы при монтировании компонента
+  }, []);
     return (
       <>
       <Header />

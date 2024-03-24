@@ -4,9 +4,12 @@ import agentsHeroIMG from '../assets/agentsHeroIMG.webp'
 import OurPeopleTeamIMG from '../assets/agent.webp'
 import Reviews from './Reviews'
 import Footer from './Footer'
-// import sprite from '../assets/icons.svg'
+import { useEffect } from 'react'
 
 export default function Agents() {
+    useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутка вверх страницы при монтировании компонента
+  }, []);
     return (
         <>
             <Header />

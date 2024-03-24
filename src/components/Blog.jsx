@@ -4,8 +4,13 @@ import blogLastNewsIMG from '../assets/blogLastNewsIMG.webp'
 import blogOldNewsIMG from '../assets/blogOldNewsIMG.webp'
 import Header from "./Header";
 import Footer from "./Footer";
+import { useEffect } from 'react'
+
 
 export default function Blog() {
+    useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутка вверх страницы при монтировании компонента
+  }, []);
     return (
         <>
             <Header />

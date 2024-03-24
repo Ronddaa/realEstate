@@ -1,5 +1,6 @@
 import sprite from '../assets/icons.svg';
 import './Footer.css'
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     
@@ -9,28 +10,28 @@ export default function Footer() {
                     <nav className="footerNavigation">
                         <ul className="wrapperFooterNav">
                             <li className="footerNavLinks">
-                                <a href="#" className="footerNavLink">team</a>
+                                <Link to='/team' className="footerNavLink">team</Link>
                             </li>
                             <li className="footerNavLinks">
-                                <a href="#" className="footerNavLink">membership</a>
+                                <Link to='/membership' className="footerNavLink">membership</Link>
                             </li>
                             <li className="footerNavLinks">
-                                <a href="#" className="footerNavLink">sale</a>
+                                <Link to='/sale' className="footerNavLink">sale</Link>
                             </li>
                             <li className="footerNavLinks">
-                                <a href="#" className="footerNavLink">rent</a>
+                                <Link to='/rent' className="footerNavLink">rent</Link>
                             </li>
                             <li className="footerNavLinks">
-                                <a href="#" className="footerNavLink">agents</a>
+                                <Link to='/agents' className="footerNavLink">agents</Link>
                             </li>
                             <li className="footerNavLinks">
-                                <a href="#" className="footerNavLink">blog</a>
+                                <Link to='/blog' className="footerNavLink">blog</Link>
                             </li>
                             <li className="footerNavLinks">
-                                <a href="#" className="footerNavLink">events</a>
+                                <Link to='/events' className="footerNavLink">events</Link>
                             </li>
                             <li className="footerNavLinks">
-                                <a href="#" className="footerNavLink">area guides</a>
+                                <Link to='/areaguides' className="footerNavLink">area guides</Link>
                             </li>
                         </ul>
                     </nav>

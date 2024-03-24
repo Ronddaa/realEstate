@@ -3,8 +3,12 @@ import areaGuidesHeroIMG from '../assets/areaguidesHeroIMG.webp'
 import guidesIMG from '../assets/guidesIMG.webp'
 import Footer from './Footer'
 import Header from './Header'
+import { useEffect } from 'react'
 
 export default function AreaGuides() {
+    useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутка вверх страницы при монтировании компонента
+  }, []);
     return (
         <>
             <Header />
