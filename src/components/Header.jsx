@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
+import mainPageLogoIMG from '../assets/logo.svg'
 
 export default function Header() {
     return (
         <header className="header" id="header">
-      <Link to='/' className="mainPageLogo"><img src="./src/assets/logo.svg" alt="logo" className="mainPageLogoIMG" width="157" height="46"/></Link>
+      <Link to='/' className="mainPageLogo"><img src={mainPageLogoIMG} alt="logo" className="mainPageLogoIMG" width="157" height="46"/></Link>
       <nav>
         <ul className="headerWrapperNav">
           <li>
