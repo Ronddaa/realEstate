@@ -111,24 +111,17 @@ header > nav {
 .headerNavLinks:focus {
   color: #f5b201;
 }
+
 .wrapperDropDownMenuProperties {
   display: none;
-  background-color: #fff;
-  margin-top: 13%;
-  position: absolute; /* Добавлено */
-  z-index: 5; /* Добавлено */
-  flex-direction: column; /* Добавлено */
-  gap: 10px; /* Добавлено */
-  padding: 10px; /* Добавлено для увеличения области клика */
-}
-.dropdownMenuProperties {
   position: relative;
-  transition: 0.3s;
+  padding: 15px;
 }
-.dropdownMenuProperties:hover > .wrapperDropDownMenuProperties,
-.dropdownMenuProperties:focus > .wrapperDropDownMenuProperties {
-  display: flex;
+.dropdownMenuProperties:hover > .wrapperDropDownMenuProperties {
+  display: block;
+  position: absolute;
 }
+
 .headerBookingBtn {
   background-color: transparent;
   border: none;
