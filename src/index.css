@@ -121,6 +121,9 @@ header > nav {
   display: block;
   position: absolute;
 }
+.headerNavLinks {
+  width: 100%;
+}
 
 .headerBookingBtn {
   background-color: transparent;
