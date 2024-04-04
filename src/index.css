@@ -139,6 +139,23 @@ header > nav {
   color: #d09900;
 }
 
+.headerBurgerMenuBtn {
+  display: none;
+}
+
+@media (max-width: 445px) {
+  .headerBurgerMenuBtn {
+    display: block;
+  }
+  .header {
+    margin-bottom: 20px;
+  }
+  .headerWrapperNav,
+  .headerBookingBtn {
+    display: none;
+  }
+}
+
 /* HEADER END */
 
 /* MODAL WINDOW */

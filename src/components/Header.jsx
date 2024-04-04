@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import mainPageLogoIMG from '../assets/logo.svg'
+import sprite from '../assets/icons.svg'
 
 export default function Header() {
     return (
@@ -42,7 +43,10 @@ export default function Header() {
       </nav>
       <button className="headerBookingBtn" id="headerBookingBtn">
         BOOK VALUATION
-      </button>
+        </button>
+        <svg className="headerBurgerMenuBtn" width={50} height={30}>
+          <use xlinkHref={`${sprite}#icon-burger-menu`}></use>
+        </svg>
     </header>
     )
 }

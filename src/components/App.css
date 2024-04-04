@@ -328,3 +328,23 @@
 }
 
 /* agentsSection END */
+
+@media (max-width: 445px) {
+  .mainTitle {
+    font-size: 16vw;
+    white-space: wrap;
+    text-align: left;
+  }
+  .wrapperMainText {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapperHeroMainText {
+    max-width: 100%;
+  }
+  .heroMainText {
+    font-size: 3vw;
+    margin-bottom: 30px;
+  }
+}
