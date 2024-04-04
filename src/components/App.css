@@ -332,7 +332,7 @@
 @media (max-width: 445px) {
   .mainTitle {
     font-size: 16vw;
-    white-space: wrap;
+    white-space: normal;
     text-align: left;
   }
   .wrapperMainText {

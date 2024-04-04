@@ -1,6 +1,6 @@
 footer {
   background-color: #2b2e35;
-  padding: 70px 50px 0;
+  padding: 3% 2% 0;
   position: relative;
 }
 .wrapperFooterNav {
@@ -157,9 +157,10 @@ footer {
   font-size: 1vw;
   transition: 0.3s;
 }
-.linkToCallUsFooter:hover, .linkToCallUsFooter:focus{
-    color: #cd9600;
-    text-shadow: 0px 0px 18px rgb(255, 221, 129);
+.linkToCallUsFooter:hover,
+.linkToCallUsFooter:focus {
+  color: #cd9600;
+  text-shadow: 0px 0px 18px rgb(255, 221, 129);
 }
 .wrapperSocialLinksFooter {
   display: flex;
@@ -176,8 +177,9 @@ footer {
   position: relative;
   transition: 0.3s;
 }
-.linkToSocialFooter:hover, .linkToSocialFooter:focus{
-    background-color: #fff;
+.linkToSocialFooter:hover,
+.linkToSocialFooter:focus {
+  background-color: #fff;
 }
 .iconToSocialFooter {
   position: absolute;
@@ -196,4 +198,8 @@ footer {
 }
 .textPolicyFooter {
   font-size: 1.2vw;
+}
+
+@media (max-width: 445px) {
+  
 }
