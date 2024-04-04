@@ -342,9 +342,46 @@
   }
   .wrapperHeroMainText {
     max-width: 100%;
+    margin-bottom: 30px;
   }
   .heroMainText {
-    font-size: 3vw;
+    font-size: 4.2vw;
+  }
+  .wrapperMainBtn {
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: 100%;
+    align-items: center;
+  }
+  .mainContactBtn {
+    width: 50%;
+    font-size: 4vw;
+  }
+  .heroIMG {
+    min-height: 298px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .titleAboutUs {
+    font-size: 9vw;
     margin-bottom: 30px;
+  }
+  .textAboutUs {
+    font-size: 3.9vw;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .AboutInfo {
+    flex-direction: column;
+  }
+  .wrapperTitleInfo {
+    max-width: 100%;
+  }
+  .titleInfo {
+    font-size: 5.5vw;
+  }
+  .textInfo {
+    font-size: 3vw;
   }
 }
