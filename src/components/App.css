@@ -374,6 +374,8 @@
   }
   .AboutInfo {
     flex-direction: column;
+    position: relative;
+    gap: 80px;
   }
   .wrapperTitleInfo {
     max-width: 100%;
@@ -382,6 +384,16 @@
     font-size: 5.5vw;
   }
   .textInfo {
-    font-size: 3vw;
+    font-size: 4vw;
+  }
+  .containerInfoIMG {
+    width: 90%;
+    margin-left: auto;
+  }
+  .containerInfoIMG::after {
+    width: 80%;
+  }
+  .infoIMG {
+    height: 202px;
   }
 }

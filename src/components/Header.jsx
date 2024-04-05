@@ -44,7 +44,7 @@ export default function Header() {
       <button className="headerBookingBtn" id="headerBookingBtn">
         BOOK VALUATION
         </button>
-        <svg className="headerBurgerMenuBtn" width={80} height={80}>
+        <svg className="headerBurgerMenuBtn" width={80} height={50}>
           <use xlinkHref={`${sprite}#icon-burger-menu`}></use>
         </svg>
     </header>
