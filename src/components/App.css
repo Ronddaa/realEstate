@@ -365,7 +365,8 @@
 
   .titleAboutUs,
   .titleProperties,
-  .titleWant {
+  .titleWant,
+  .titleAgents {
     font-size: 9vw;
     margin-bottom: 30px;
   }
@@ -413,5 +414,16 @@
   }
   .wrapperWannaInfo {
     flex-direction: column;
+  }
+  .titleWantInfo {
+    font-size: 5vw;
+    text-align: left;
+  }
+  .textWantInfo {
+    font-size: 3vw;
+    margin-bottom: 50px;
+  }
+  .wrapperAgentsList{
+    
   }
 }
