@@ -15,9 +15,9 @@ export default function PropertiesSlider() {
     useEffect(() => {
         function handleResize() {
             const screenWidth = window.innerWidth;
-            if (screenWidth <= 445) {
+            if (screenWidth <= 767) {
                 setSlidesPerView(1);
-            } else if (screenWidth <= 768) {
+            } else if (screenWidth <= 1158) {
                 setSlidesPerView(2);
             } else {
                 setSlidesPerView(3);
