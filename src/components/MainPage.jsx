@@ -100,7 +100,8 @@ export default function MainPage() {
         </ul>
         <PropertiesSlider />
       </section>
-      <section className='wantSection'>
+        <section className='wantSection'>
+          <div className="container">
         <h2 className="titleWant">do you want to be part of our team?</h2>
         <p className="textWant">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s.</p>
         <div className="wrapperWannaInfo">
@@ -115,7 +116,8 @@ export default function MainPage() {
             <p className="textWantInfo">Our company provides free access to OneMarket, Zoopla and RightMove, as well as many other platforms for the duration of your membership with us.</p>
             <button className='mainContactBtn mainContactBtnY'>Join us</button>
           </article>
-        </div>
+            </div>
+            </div>
       </section>
       <section className='agentsSection'>
         <div className="container">

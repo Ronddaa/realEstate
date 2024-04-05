@@ -179,7 +179,7 @@
 
 .wantSection {
   background-color: #2b2e35;
-  padding: 80px 50px;
+  padding: 8% 0 5%;
 }
 .titleWant {
   color: #f5b201;
@@ -363,7 +363,9 @@
     width: 100%;
   }
 
-  .titleAboutUs {
+  .titleAboutUs,
+  .titleProperties,
+  .titleWant {
     font-size: 9vw;
     margin-bottom: 30px;
   }
@@ -395,5 +397,21 @@
   }
   .infoIMG {
     height: 202px;
+  }
+
+  .wrapperProperties {
+    flex-direction: column;
+  }
+  .titleSale {
+    font-size: 10vw;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #fff;
+  }
+  .textWant {
+    font-size: 2.4vw;
+    margin-bottom: 50px;
+  }
+  .wrapperWannaInfo {
+    flex-direction: column;
   }
 }
