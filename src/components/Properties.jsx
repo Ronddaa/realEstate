@@ -6,19 +6,42 @@ import { Navigation, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
+import { useEffect, useState } from 'react';
 
 
 export default function PropertiesSlider() {
+    const [slidesPerView, setSlidesPerView] = useState(3); // Устанавливаем изначальное количество слайдов
+
+    useEffect(() => {
+        function handleResize() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth <= 445) {
+                setSlidesPerView(1);
+            } else if (screenWidth <= 768) {
+                setSlidesPerView(2);
+            } else {
+                setSlidesPerView(3);
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        // Убираем слушатель события при размонтировании компонента
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <>
             <section className='PropertiesSlider' id='PropertiesSlider'>
-                    <Swiper
-                        spaceBetween={30}
-                        loop={true}
-                    slidesPerView={3}
+                <Swiper
+                    spaceBetween={30}
+                    loop={true}
+                    slidesPerView={slidesPerView}
                     effect='coverflow'
-                        navigation
-                        modules={[Navigation, EffectCoverflow]}>
+                    navigation
+                    modules={[Navigation, EffectCoverflow]}>
                     <SwiperSlide className="slideProperties">
                         <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" width={250} height={560} />
                         <article className='wrapperPropertiesInfo'>

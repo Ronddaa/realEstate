@@ -48,3 +48,26 @@
 .swiper .swiper-button-next {
   color: #000;
 }
+
+@media (max-width: 445px) {
+  .slidePropertiesIMG {
+    max-width: 165px;
+    max-height: 338px;
+  }
+  .wrapperPropertiesInfo {
+    padding: 20px 15px;
+  }
+  .userPhotoIMG {
+    max-width: 30px;
+    max-height: 30px;
+  }
+  .wrapperAgentInfo {
+    margin-bottom: 20px;
+  }
+  .textUserCommentProperties {
+    font-size: 0.6rem;
+  }
+  .titleAboutCardProperties {
+    font-size: 1.5rem;
+  }
+}
