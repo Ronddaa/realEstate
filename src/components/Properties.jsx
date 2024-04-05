@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 
 
 export default function PropertiesSlider() {
-    const [slidesPerView, setSlidesPerView] = useState(3); // Устанавливаем изначальное количество слайдов
+    const [slidesPerView, setSlidesPerView] = useState(3);
 
     useEffect(() => {
         function handleResize() {
@@ -23,6 +23,9 @@ export default function PropertiesSlider() {
                 setSlidesPerView(3);
             }
         }
+
+        // Вызовите функцию handleResize при загрузке страницы
+        handleResize();
 
         window.addEventListener('resize', handleResize);
 
