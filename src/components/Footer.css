@@ -199,7 +199,98 @@ footer {
 .textPolicyFooter {
   font-size: 1.2vw;
 }
+.footerMobile{
+  display: none;
+}
 
 @media (max-width: 445px) {
-  
+  .footerDesc{
+    display: none;
+  }
+  .footerMobile{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 15% 3%;
+    color: #f5b201;
+  }
+  .wrapperFooterContact{
+    display: flex;
+    justify-content: space-between;
+  }
+  .titleFooter{
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 7vw;
+  }
+  .wrapperFooterContacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .wrapperFooterContacts > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .titleFooterContacts{
+    font-size: 6vw;
+    position: relative;
+  }
+  .titleFooterContacts::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #484848;
+  }
+  .footerLinkToCall{
+    color: #f5b201;
+  }
+  .footerLinkToCall:hover, .footerLinkToCall:focus{
+    color: #cd9600;
+  }
+  .footerNavMobile{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+  .footerNavMobile > ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7%;
+    row-gap: 10%;
+  }
+  .footerNavLink{
+    font-size: 5vw;
+  }
+  .wrapperSocialLinksFooter{
+    position: relative;
+    gap: 10%;
+    max-width: 75%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .footerForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .labelInput, .inputUserDate, .textInInput{
+    font-size: 3.5vw;
+  }
+  .labelInput .inputUserDate:focus + .textInInput,
+  .labelInput .inputUserDate:valid + .textInInput{
+    font-size: 2vw;
+  }
+  .formFooterBtn{
+    margin: 20px auto;
+    width: 40%;
+    font-size: 3vw;
+  }
 }
