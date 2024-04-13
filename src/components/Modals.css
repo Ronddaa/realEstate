@@ -113,3 +113,38 @@
   grid-area: 8 / 3 / 9 / 6;
   max-height: 50px;
 }
+@media (max-width:445px){
+  .modalContentJoinUs{
+    width: 100%;
+    height: 100%;
+  }
+  .modalJoinUsIMG{
+    grid-area: 1 / 1 / 3 / 6;
+  }
+  .modalContentJoinUs > article{
+    grid-area: 3 / 1 / 9 / 6;
+  }
+  .mainContactBtnModalJoinUs{
+    grid-area: 9 / 1 / 10 / 6;
+  }
+  .titleModalJoinUs{
+    font-size: 7vw;
+  }
+  .textModalJoinUs{
+    font-size: 3.5vw;
+  }
+  .inputUserDateModalJoinUs{
+    font-size: 5vw;
+  }
+  .textInInputModalJoinUs{
+    font-size: 4vw;
+  }
+  .labelInputModalJoinUs
+  .inputUserDateModalJoinUs:focus
+  + .textInInputModalJoinUs,
+.labelInputModalJoinUs
+  .inputUserDateModalJoinUs:valid
+  + .textInInputModalJoinUs{
+    font-size: 2vw;
+  }
+}
