@@ -424,6 +424,25 @@
     margin-bottom: 50px;
   }
   .wrapperAgentsList{
-    
+    flex-direction: column;
+  }
+  .titleAgentsName{
+    font-size: 6.2vw;
+  }
+  .textAgentPos{
+    font-size: 4vw;
+  }
+  .phoneAgentsLink{
+    font-size: 4vw;
+  }
+  .profileAgentsLink{
+    font-size: 3.5vw;
+    text-transform: uppercase;
+  }
+  .allAgentsLink{
+    font-size: 4.3vw;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
   }
 }

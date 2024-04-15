@@ -18,7 +18,7 @@ export default function Membership() {
             <Header />
             <section className="MembershipHero">
                 <div className="container">
-                    <h1 className="titleMembership"><span>Member</span>ship</h1>
+                    <h1 className="titleMembership"><span>Join</span>Us</h1>
                     <div className='wrapperMainBtn wrapperMainBtnTeam'>
                         <button className='mainContactBtn mainContactBtnTeam'>Join us</button>
                         <button className='mainContactBtn mainContactBtnTeam'>Contact agent</button>
