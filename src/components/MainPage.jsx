@@ -17,7 +17,7 @@ import { useState, useEffect } from 'react'
 
 export function MainTitle() {
   return (
-  <h1 className="mainTitle"><span>GBN &</span> partners</h1>
+  <h1 className="mainTitle"><span>GBN &</span> Invest</h1>
   )
 }
 

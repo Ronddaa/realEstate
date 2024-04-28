@@ -11,10 +11,7 @@ export default function Header() {
           <li>
             <Link to='/team' className="headerNavLinks">TEAM</Link>
           </li>
-          <li>
-            <Link to='/membership' className="headerNavLinks">membership</Link>
-          </li>
-          <li className="dropdownMenuProperties">
+           <li className="dropdownMenuProperties">
               <p className="headerNavLinks headerNavLinksProperties">Properties</p>
               <div className="wrapperDropDownMenuProperties">
                 <ul className="dropDown-Wrapper">
