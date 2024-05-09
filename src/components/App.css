@@ -21,7 +21,9 @@
   max-width: 55%;
 }
 .heroMainText {
-  font-size: 1.1vw;
+  font-size: 1.4vw;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 .wrapperMainBtn {
   display: flex;

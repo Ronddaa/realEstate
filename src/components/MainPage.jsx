@@ -1,7 +1,6 @@
 import './App.css'
 import heroIMG from '../assets/heroIMG.webp'
 import saleIMG from '../assets/sale.webp'
-import agentIMG from '../assets/agent.webp'
 import wantIMG1 from '../assets/wantSection1.webp'
 import wantIMG2 from '../assets/wantSection2.webp'
 import wantIMG3 from '../assets/wantSection3.webp'
@@ -34,7 +33,7 @@ export default function MainPage() {
         <MainTitle />
         <div className="wrapperMainText">
           <div className='wrapperHeroMainText'>
-            <p className="heroMainText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p className="heroMainText">Your Trusted Partner in Bali Property Market. <br></br> We inspired of your inspiration. <br></br>Into action.</p>
           </div>
           <div className='wrapperMainBtn'>
             <button className='mainContactBtn' id='mainContactBtnJoinUs' onClick={() => setModalPrizeOpen(true)}>Join us</button>
@@ -47,7 +46,7 @@ export default function MainPage() {
       <section className='aboutUs'>
         <div className="container">
           <h2 className="titleAboutUs">ABOUT US & OUR SERVICES</h2>
-          <p className="textAboutUs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s.</p>
+          <p className="textAboutUs">We combine best-in-class people and technology to set the standard for service in estate agency. We do the best for the best.</p>
           <ul className="wrapperAboutInfo">
             <li className="AboutInfo">
               <article className='wrapperTitleInfo'>
@@ -59,21 +58,21 @@ export default function MainPage() {
             <li className="AboutInfo">
               <article className='wrapperTitleInfo'>
                 <h3 className="titleInfo">buying PROperties</h3>
-                <p className="textInfo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p className="textInfo">In our experience, a house is not a dream home because of its size or color. It`s about how you feel when you walk through the front door – the way you can instantly see your life unfolding there. This about more than real estate. It`s about your life and your dreams.</p>
               </article>
               <div className="containerInfoIMG"><img className='infoIMG' src={heroIMG} alt="rent" /></div>
             </li>
             <li className="AboutInfo">
               <article className='wrapperTitleInfo'>
                 <h3 className="titleInfo">properties for sale</h3>
-                <p className="textInfo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p className="textInfo">You`re ready to sell your property. And, while you`re looking forward to seeing the word “SOLD” posted from the curb, you know there`s a lot to consider along the way. One of your first decisions is to select a real estate company and real estate agent who`ll join you in the process.</p>
               </article>
               <div className="containerInfoIMG"><img className='infoIMG' src={heroIMG} alt="rent" /></div>
             </li>
             <li className="AboutInfo">
               <article className='wrapperTitleInfo'>
                 <h3 className="titleInfo">consultation of our agents</h3>
-                <p className="textInfo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p className="textInfo">Finding or selling a property can often be stressful. We know that it’s not a house you seek but a home. Trust us and let us do everything instead or you.</p>
               </article>
               <div className="containerInfoIMG"><img className='infoIMG' src={heroIMG} alt="rent" /></div>
             </li>
@@ -103,7 +102,7 @@ export default function MainPage() {
         <section className='wantSection'>
           <div className="container">
         <h2 className="titleWant">do you want to be part of our team?</h2>
-        <p className="textWant">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s.</p>
+        <p className="textWant">GBN Invest is built for agents by agents, everything we do is with our agents in mind, it is that philosophy that has allowed us to build our business to a position where we are now.</p>
         <div className="wrapperWannaInfo">
           <div className="wrapperWantIMG">
             <img src={wantIMG1} alt="rooms" className="wantIMG" width={771} height={578} />
@@ -118,41 +117,6 @@ export default function MainPage() {
           </article>
             </div>
             </div>
-      </section>
-      <section className='agentsSection'>
-        <div className="container">
-          <h2 className="titleAgents">our agents</h2>
-          <ul className="wrapperAgentsList">
-            <li className="wrapperAgent">
-              <img src={agentIMG} alt="Agent" className="agentsIMG" />
-              <article className='wrapperAgentsInfo'>
-                <h3 className="titleAgentsName">Eva Smith</h3>
-                <p className="textAgentPos">Agent</p>
-                <a href="tel:+02037657788" className="phoneAgentsLink">+ 020 - 3765 - 7788</a>
-                <a href="#" className="profileAgentsLink">view profile</a>
-              </article>
-            </li>
-            <li className="wrapperAgent">
-              <img src={agentIMG} alt="Agent" className="agentsIMG" />
-              <article className='wrapperAgentsInfo'>
-                <h3 className="titleAgentsName">Eva Smith</h3>
-                <p className="textAgentPos">Agent</p>
-                <a href="tel:+02037657788" className="phoneAgentsLink">+ 020 - 3765 - 7788</a>
-                <a href="#" className="profileAgentsLink">view profile</a>
-              </article>
-            </li>
-            <li className="wrapperAgent">
-              <img src={agentIMG} alt="Agent" className="agentsIMG" />
-              <article className='wrapperAgentsInfo'>
-                <h3 className="titleAgentsName">Eva Smith</h3>
-                <p className="textAgentPos">Agent</p>
-                <a href="tel:+02037657788" className="phoneAgentsLink">+ 020 - 3765 - 7788</a>
-                <a href="#" className="profileAgentsLink">view profile</a>
-              </article>
-            </li>
-          </ul>
-          <a href="#" className="allAgentsLink">all agents</a>
-        </div>
       </section>
       <section className='reviewsSection'>
         <h2 className="titleReviews">Reviews</h2>
