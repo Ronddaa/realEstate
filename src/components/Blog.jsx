@@ -19,7 +19,6 @@ export default function Blog() {
                     <h1 className="titleBlog"><span>bl</span>og</h1>
                     <div className='wrapperMainBtn wrapperMainBtnBlog'>
                         <button className='mainContactBtn mainContactBtnBlog' id='mainContactBtnJoinUs'>Join us</button>
-                        <button className='mainContactBtn mainContactBtnBlog'>Contact agent</button>
                     </div>
                 </div>
                 <img className="heroBlogIMG" src={heroBlogIMG} alt="building" />

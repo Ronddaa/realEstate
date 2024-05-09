@@ -26,7 +26,7 @@ export default function Footer() {
                                 <Link to='/events' className="footerNavLink">events</Link>
                             </li>
                             <li className="footerNavLinks">
-                                <Link to='/areaguides' className="footerNavLink">area guides</Link>
+                                <Link to='/areaguides' className="footerNavLink">Global Property Overview</Link>
                             </li>
                         </ul>
                     </nav>

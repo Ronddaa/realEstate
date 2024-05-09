@@ -19,7 +19,6 @@ export default function OurTeam() {
                     <h1 className="titleOurTeamSection"><span>Our</span> Team</h1>
                     <div className='wrapperMainBtn wrapperMainBtnTeam'>
                         <button className='mainContactBtn mainContactBtnTeam'>Join us</button>
-                        <button className='mainContactBtn mainContactBtnTeam'>Contact agent</button>
                     </div>
                 </div>
                 <img className='ourTeamHeroIMG' src={OurTeamHeroIMG} alt="Building" />

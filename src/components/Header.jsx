@@ -21,12 +21,12 @@ export default function Header() {
             <Link to='/events' className="headerNavLinks">EVENTS</Link>
           </li>
           <li>
-            <Link to='/areaguides' className="headerNavLinks">AREA GUIDES</Link>
+            <Link to='/areaguides' className="headerNavLinks">Global Property Overview</Link>
           </li>
         </ul>
       </nav>
       <button className="headerBookingBtn" id="headerBookingBtn">
-        BOOK VALUATION
+        Submit an Inquiry
         </button>
         <svg className="headerBurgerMenuBtn" width={80} height={50}>
           <use xlinkHref={`${sprite}#icon-burger-menu`}></use>

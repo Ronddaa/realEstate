@@ -135,6 +135,7 @@ header > nav {
   padding: 5px;
   transition: 0.3s;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 .headerBookingBtn:hover,
 .headerBookingBtn:focus {

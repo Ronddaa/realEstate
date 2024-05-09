@@ -18,7 +18,6 @@ export default function AreaGuides() {
                     <h1 className="titleAreaGuides"><span>area</span> guides</h1>
                     <div className='wrapperMainBtn wrapperMainBtnAreaguides'>
                         <button className='mainContactBtn mainContactBtnAreaguides' id='mainContactBtnJoinUs'>Join us</button>
-                        <button className='mainContactBtn mainContactBtnAreaguides'>Contact agent</button>
                     </div>
                 </div>
                 <img src={areaGuidesHeroIMG} alt="building" className="areaguidesHeroIMG" />

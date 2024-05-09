@@ -18,7 +18,6 @@ export default function Events() {
                     <h1 className="titleEvents"><span>EVE</span>NTS</h1>
                     <div className='wrapperMainBtn wrapperMainBtnEvents'>
                         <button className='mainContactBtn mainContactBtnEvents' id='mainContactBtnJoinUs'>Join us</button>
-                        <button className='mainContactBtn mainContactBtnEvents'>Contact agent</button>
                     </div>
                 </div>
                 <img src={eventsHeroIMG} alt="events" className="eventsHeroIMG" />

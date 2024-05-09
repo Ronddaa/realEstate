@@ -37,7 +37,6 @@ export default function MainPage() {
           </div>
           <div className='wrapperMainBtn'>
             <button className='mainContactBtn' id='mainContactBtnJoinUs' onClick={() => setModalPrizeOpen(true)}>Join us</button>
-            <button className='mainContactBtn'>Contact agent</button>
           </div>
         </div>
       </div>    
