@@ -49,8 +49,8 @@ export default function MainPage() {
           <ul className="wrapperAboutInfo">
             <li className="AboutInfo">
               <article className='wrapperTitleInfo'>
-                <h3 className="titleInfo">Rental services</h3>
-                <p className="textInfo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h3 className="titleInfo">Sending the description right now</h3>
+                <p className="textInfo">At our company, selling land is more than a transaction; it`s about catalyzing growth and progress. We derive satisfaction from connecting developers with opportunities to shape communities and create lasting impact. Each plot of land represents potential for innovation, transformation, and the realization of ambitious projects. We take pride in facilitating partnerships that drive economic development, enhance infrastructure, and contribute to the advancement of society as a whole.</p>
               </article>
               <div className="containerInfoIMG"><img className='infoIMG' src={heroIMG} alt="rent" /></div>
             </li>
