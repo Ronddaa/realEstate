@@ -1,6 +1,5 @@
 import './Rent.css';
 import Header from './Header';
-import Reviews from './Reviews';
 import Footer from './Footer';
 import heroIMG from '../assets/heroIMG.webp'
 import { useState, useEffect } from 'react';
@@ -31,7 +30,6 @@ export default function Agents() {
         >
           Join us
         </button>
-        <button className="mainContactBtn">Contact agent</button>
       </div>
       {/* Кнопки */}
       {/* Изображение */}
@@ -99,7 +97,6 @@ export default function Agents() {
         ))}
       </div>
       {/* Карточки */}
-<Reviews />
       <Footer />
       <ModalJoinUs
         isOpen={modalPrizeIsOpen}
