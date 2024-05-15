@@ -83,4 +83,7 @@
   .titlePriceCardProperties{
     margin-bottom: 32px;
   }
+  .linkToReviewsCardProperties{
+    font-size: 3vw;
+  }
 }
