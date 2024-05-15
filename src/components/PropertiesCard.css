@@ -1,7 +1,5 @@
 .propertyCard {
   display: flex;
-  width: 700px;
-  margin: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #fff;
@@ -13,8 +11,8 @@
 }
 
 .propertyImage__img {
-  width: 375px;
-  height: 820px;
+  max-width: 375px;
+  max-height: 620px;
 }
 
 .propertyDetails{

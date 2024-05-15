@@ -19,7 +19,7 @@ export default function Agents() {
     <>
       <Header />
       <h1 className="titleRentComponent">
-        <span>PROPERTIES</span> FOR RENT
+        <span>PROPERTIES</span> FOR SALE
       </h1>
       {/* Кнопки */}
       <div className="buttonContainer">

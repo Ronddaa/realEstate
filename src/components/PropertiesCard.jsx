@@ -7,8 +7,7 @@ const PropertyCard = ({
         location,
         details,
         price,
-        agentPhoto,
-        agentName, } = property;
+         } = property;
     console.log(property);
   return (
     <div className="propertyCard">
@@ -16,10 +15,6 @@ const PropertyCard = ({
         <img className="propertyImage__img" src={imageUrl} alt="Property" />
       </div>
       <div className="propertyDetails">
-      <div className="agentDetails">
-        <img className="agentDetails__img" src={agentPhoto} alt="Agent" />
-        <p className="agentDetails__name">{agentName}</p>
-        </div>
         <h3 className="propertyDetails__location">{location}</h3>
         <p className="propertyDetails__description">{details}</p>
       {/* <div className="agentDetails"> */}

@@ -17,7 +17,7 @@ export default function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/events" element={<Events />} />
         <Route path="/areaguides" element={<AreaGuides />} />
-        <Route path="/sale" element={<Rent />} />
+        <Route path="/properties" element={<Rent />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </>
