@@ -12,7 +12,7 @@ const properties = [
   },
   {
     id: 2,
-    imageUrl: 'url_2',
+    imageUrl: modalJoinUsIMG,
     agentName: 'Agent Name 2',
     agentPhoto: 'agent_photo_url_2',
     location: 'Location 2',
@@ -21,7 +21,16 @@ const properties = [
   },
   {
     id: 3,
-    imageUrl: 'url_2',
+    imageUrl: modalJoinUsIMG,
+    agentName: 'Agent Name 2',
+    agentPhoto: 'agent_photo_url_2',
+    location: 'Location 2',
+    details: 'Details 2',
+    price: '6420',
+    },
+  {
+    id: 4,
+    imageUrl: modalJoinUsIMG,
     agentName: 'Agent Name 2',
     agentPhoto: 'agent_photo_url_2',
     location: 'Location 2',

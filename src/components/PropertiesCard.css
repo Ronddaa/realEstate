@@ -2,7 +2,6 @@
   display: flex;
   border: 1px solid #ccc;
   border-radius: 8px;
-  background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #f5b301;
 }
@@ -11,26 +10,31 @@
 }
 
 .propertyImage__img {
-  max-width: 375px;
   max-height: 620px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .propertyDetails{
-  padding-left: 30px;
+    padding: 6%;
+  padding-left: 8%;
+  position: relative;
+  max-width: 50%;
 }
 
 .propertyDetails__location {
-  font-size: 1.4rem;
+  font-size: 1.4em;
   margin-bottom: 5px;
 }
 
 .propertyDetails__description {
   margin-bottom: 52px;
+  font-size: 1.2em;
 }
 
 .propertyDetails__price {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.3em;
   margin-bottom: 10px;
 }
 
@@ -40,23 +44,15 @@
   color: #000000;
   cursor: pointer;
   position: absolute;
-  margin-top: 300px;
   text-decoration: underline;
   text-transform: uppercase;
+  font-size: 0.9em;
+  bottom: 5%;
+  font-weight: 600;
+  transition: 0.3s;
 }
-
-
-.agentDetails {
-  display: flex;
-  align-items: center;
-  margin: 66px 0px 49px;
-}
-
-.agentDetails__img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
+.propertyDetails__button:hover, .propertyDetails__button:focus{
+    opacity: 0.5;
 }
 
 .additionalInfo {
@@ -64,17 +60,15 @@
   padding-top: 10px;
 }
 
-.additionalInfo__skyland {
-  font-weight: bold;
-}
-
 .additionalInfo__list {
-  margin-bottom: 74px;
-  font-size: 1.2rem;
+  margin-bottom: 40px;
+  font-size: 1.2em;
   list-style:disc;
   padding: 0;
+  margin-left: 12%;
 }
 
 .additionalInfo__list li {
   margin-bottom: 5px;
+  font-size: 1em;
 }
