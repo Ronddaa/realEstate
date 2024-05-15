@@ -1,0 +1,82 @@
+.propertyCard {
+  display: flex;
+  width: 700px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f5b301;
+}
+
+.propertyImage {
+}
+
+.propertyImage__img {
+  width: 375px;
+  height: 820px;
+}
+
+.propertyDetails{
+  padding-left: 30px;
+}
+
+.propertyDetails__location {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.propertyDetails__description {
+  margin-bottom: 52px;
+}
+
+.propertyDetails__price {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.propertyDetails__button {
+  border: none;
+  border-radius: 4px;
+  color: #000000;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 300px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+
+.agentDetails {
+  display: flex;
+  align-items: center;
+  margin: 66px 0px 49px;
+}
+
+.agentDetails__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.additionalInfo {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.additionalInfo__skyland {
+  font-weight: bold;
+}
+
+.additionalInfo__list {
+  margin-bottom: 74px;
+  font-size: 1.2rem;
+  list-style:disc;
+  padding: 0;
+}
+
+.additionalInfo__list li {
+  margin-bottom: 5px;
+}

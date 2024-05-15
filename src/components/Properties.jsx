@@ -48,10 +48,6 @@ export default function PropertiesSlider() {
                     <SwiperSlide className="slideProperties">
                         <img src={PropertiesIMG} alt="Building" className="slidePropertiesIMG" width={250} height={560} />
                         <article className='wrapperPropertiesInfo'>
-                            <div className="wrapperAgentInfo">
-                                <img src={userProperties} alt="User" className="userPhotoIMG" />            
-                                <p className="textUserCommentProperties">Listed by Mary Heard</p>
-                            </div>
                             <h3 className="titleAboutCardProperties">SKYLAND</h3>
                             <p className="textAboutCardPropetries">Canary Wharf</p>
                             <ol className="wrapperLostCardProperties">

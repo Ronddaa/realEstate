@@ -52,7 +52,7 @@
 
 @media (max-width: 445px) {
   .slidePropertiesIMG {
-    max-width: 165px;
+    max-width: 100%;
     max-height: 338px;
   }
   .wrapperPropertiesInfo {
