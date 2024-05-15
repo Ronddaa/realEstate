@@ -4,10 +4,14 @@ import OurTeamHeroIMG from '../assets/ourTeamMain.webp'
 import OurPlusInfoIMG from '../assets/OurPlusInfoIMG.webp'
 import PropertiesSlider from './Properties'
 import Footer from './Footer'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { ModalJoinUs } from './Modals'
+import modalJoinUsIMG from '../assets/modalJoinUsIMG.webp'
+
 
 
 export default function OurTeam() {
+    const [modalPrizeIsOpen, setModalPrizeOpen] = useState(false);
     useEffect(() => {
     window.scrollTo(0, 0); // Прокрутка вверх страницы при монтировании компонента
   }, []);
@@ -18,7 +22,7 @@ export default function OurTeam() {
                 <div className="container">
                     <h1 className="titleOurTeamSection"><span>Our</span> Team</h1>
                     <div className='wrapperMainBtn wrapperMainBtnTeam'>
-                        <button className='mainContactBtn mainContactBtnTeam'>Join us</button>
+                        <button className='mainContactBtn mainContactBtnTeam' onClick={() => setModalPrizeOpen(true)}>Join us</button>
                     </div>
                 </div>
                 <img className='ourTeamHeroIMG' src={OurTeamHeroIMG} alt="Building" />
@@ -67,6 +71,34 @@ export default function OurTeam() {
                 <PropertiesSlider />
             </section>
             <Footer />
+            <ModalJoinUs
+          isOpen={modalPrizeIsOpen}
+          onClose={() => setModalPrizeOpen(false)}
+        >
+          <img className='modalJoinUsIMG' src={modalJoinUsIMG} alt="Building" width={287} height={757} />
+            <article>
+                <h2 className="titleModalJoinUs">join us</h2>
+                <p className="textModalJoinUs">If you are interested in partnering with us, please fill out the form below and we will be in contact.</p>
+                <form action="" className='formModalJoinUs'>
+                    <label htmlFor="inputForUserNameModalJoinUs" className="labelInputModalJoinUs">
+                        <input type="text" className="inputUserDateModalJoinUs" id="inputForUserNameModalJoinUs" required />
+                        <span className="textInInputModalJoinUs">first name</span>
+                    </label>
+                    <label htmlFor="inputForUserSNameModalJoinUs" className="labelInputModalJoinUs">
+                        <input type="text" className="inputUserDateModalJoinUs" id="inputForUserSNameModalJoinUs" required />
+                        <span className="textInInputModalJoinUs">last name</span>
+                    </label>
+                    <label htmlFor="inputForUserEmailModalJoinUs" className="labelInputModalJoinUs">
+                        <input type="email" className="inputUserDateModalJoinUs" id="inputForUserEmailModalJoinUs" required />
+                        <span className="textInInputModalJoinUs">e-mail</span>
+                    </label>
+                    <label htmlFor="inputForUserPhoneModalJoinUs" className="labelInputModalJoinUs">
+                        <input type="phone" className="inputUserDateModalJoinUs" id="inputForUserPhoneModalJoinUs" required />
+                        <span className="textInInputModalJoinUs">phone number</span>
+                    </label>
+                </form>
+            </article>
+        </ModalJoinUs>
         </>
     )
 }

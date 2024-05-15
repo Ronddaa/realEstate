@@ -17,20 +17,3 @@ export const ModalJoinUs = ({ isOpen, onClose, children }) => {
         </Modal>
     )
 }
-
-export const ModalContactAgent = ({ isOpen, onClose, children }) => {
-    console.log('qweq');
-
-    return (
-        <Modal
-            isOpen={isOpen}
-            overlayClassName={'modalWindowContactAgent'}
-            className={'modalContentContactAgent'}
-            closeTimeoutMS={300}
-            onRequestClose={() => onClose()}
-            ariaHideApp={false}
-        >
-            {children}
-        </Modal>
-    )
-}
