@@ -2,8 +2,34 @@ import '../components/Reviews.css'
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, EffectCoverflow } from 'swiper/modules';
 import userProperties from '../assets/userProperties.webp'
+import { useEffect, useState } from 'react';
+
 
 export default function Reviews() {
+    const [slidesPerView, setSlidesPerView] = useState(3);
+
+    useEffect(() => {
+        function handleResize() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth <= 767) {
+                setSlidesPerView(1);
+            } else if (screenWidth <= 1158) {
+                setSlidesPerView(2);
+            } else {
+                setSlidesPerView(2.5);
+            }
+        }
+
+        // Вызовите функцию handleResize при загрузке страницы
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        // Убираем слушатель события при размонтировании компонента
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
         <>
         <section className="reviewsSection">
@@ -11,7 +37,7 @@ export default function Reviews() {
                     centeredSlides={true}
                 spaceBetween={50}
                 loop={true}
-                slidesPerView={2.5}
+                slidesPerView={slidesPerView}
                 effect='card'
                 navigation  
                 modules={[Navigation, EffectCoverflow]}>

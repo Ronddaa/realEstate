@@ -17,3 +17,20 @@ export const ModalJoinUs = ({ isOpen, onClose, children }) => {
         </Modal>
     )
 }
+
+export const ModalSubmitAnInquiry = ({ isOpen, onClose, children }) => {
+    console.log('qweq');
+
+    return (
+        <Modal
+            isOpen={isOpen}
+            overlayClassName={'modalWindowSubmitAnInquiry'}
+            className={'modalContentSubmitAnInquiry'}
+            closeTimeoutMS={300}
+            onRequestClose={() => onClose()}
+            ariaHideApp={false}
+        >
+            {children}
+        </Modal>
+    )
+}
