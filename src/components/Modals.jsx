@@ -50,7 +50,7 @@ export const BurgerMenuSlide = ({ isOpen, onClose, children }) => {
             onRequestClose={() => onClose()}
             ariaHideApp={false}
         >
-            <svg className="closeBurgerMenuBtn" width={32} height={32} onClick={onClose}>
+        <svg className="closeBurgerMenuBtn" width={32} height={32} onClick={onClose}>
             <use xlinkHref={`${sprite}#icon-close`}></use>
           </svg>
             {children}

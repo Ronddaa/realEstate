@@ -96,13 +96,7 @@ export default function Footer() {
                         </li>
                        
                         <li className="footerNavLinks">
-                            <Link to='/sale' className="footerNavLink">sale</Link>
-                        </li>
-                        <li className="footerNavLinks">
-                            <Link to='/rent' className="footerNavLink">rent</Link>
-                        </li>
-                        <li className="footerNavLinks">
-                            <Link to='/agents' className="footerNavLink">agents</Link>
+                            <Link to='/properties' className="footerNavLink">properties</Link>
                         </li>
                         <li className="footerNavLinks">
                             <Link to='/blog' className="footerNavLink">blog</Link>

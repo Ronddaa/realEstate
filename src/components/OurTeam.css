@@ -149,3 +149,43 @@
   font-size: 1vw;
   text-transform: uppercase;
 }
+
+@media (max-width: 445px){
+  .titleOurStory{
+    font-size: 8vw;
+    margin-bottom: 50px;
+  }
+  .textOurStory{
+    font-size: 4vw;
+    max-width: 95%;
+    margin: 0 auto 40px;
+  }
+  .wrapperOurPlus{
+    flex-direction: column;
+  }
+  .ourPlus{
+    width: 100%;
+  }
+  .titleOurPlusNumbers{
+    font-size: 28vw;
+  }
+  .titleAboutUsTeam{
+    font-size: 5vw;
+  }
+  .gfdgwrvdsvbetrwsxcv p{
+    font-size: 3vw;
+  }
+  .infoAboutUsTeam:first-child{
+    flex-direction: column-reverse;
+  }
+  .infoAboutUsTeam:last-child{
+    flex-direction: column;
+  }
+  .infoAboutUsTeam p{
+    font-size: 4vw;
+    max-width: 100%;
+  }
+  .titleRealEstateOfOurAgents{
+    font-size: 9vw;
+  }
+}
