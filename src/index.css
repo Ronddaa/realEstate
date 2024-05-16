@@ -157,6 +157,87 @@ header > nav {
   .headerBookingBtn {
     display: none;
   }
+
+  .modalBurgerMenuSlide{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2B2E35;
+    padding: 10% 5%;
+    overflow: hidden;
+    z-index: 999;
+    transition: 0.4s;
+  }
+  .modalContentBurgerMenuSlide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: 0.4s;
+  }
+  .wrapperHeaderBurgerMenu{
+    display: flex;
+    justify-content: space-between;
+  }
+  .titleBurgerMenu{
+    font-size: 12vw;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #d09900;
+  }
+  .closeBurgerMenuBtn{
+    fill: #d09900;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .wrapperNavigationBurgerMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+  }
+  .BurgerMenuLinks{
+    color: #d09900;
+    font-size: 5vw;
+    text-transform: uppercase;
+  }
+  .wrapperBookV{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .burgerMenuBookingBtn{
+    color: #d09900;
+    font-size: 3vw;
+    max-width: 45%;
+  }
+  .titleBurgerMenuFooter{
+    font-size: 8vw;
+    color: #d09900;
+    position: relative;
+  }
+  .titleBurgerMenuFooter::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5px;
+    background-color: #48494b;
+  }
+  .wrapperBurgerInfoContacts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .burgerLinkToCall, .burgerInfoContacts{
+    color: #d09900;
+  }
 }
 
 /* HEADER END */

@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom"
 import mainPageLogoIMG from '../assets/logo.svg'
 import sprite from '../assets/icons.svg'
+import { BurgerMenuSlide } from './Modals'
+import { useState } from "react"
 
 export default function Header() {
-    return (
+  const [modalPrizeIsOpen, setModalPrizeOpen] = useState(false);
+  return (
+      <>
         <header className="header" id="header">
       <Link to='/' className="mainPageLogo"><img src={mainPageLogoIMG} alt="logo" className="mainPageLogoIMG" width="157" height="46"/></Link>
       <nav>
@@ -28,9 +32,51 @@ export default function Header() {
       <button className="headerBookingBtn" id="headerBookingBtn">
         Submit an Inquiry
         </button>
-        <svg className="headerBurgerMenuBtn" width={80} height={50}>
+        <svg className="headerBurgerMenuBtn" width={80} height={50} onClick={() => setModalPrizeOpen(true)}>
           <use xlinkHref={`${sprite}#icon-burger-menu`}></use>
         </svg>
     </header>
+      <BurgerMenuSlide
+      isOpen={modalPrizeIsOpen}
+        onClose={() => setModalPrizeOpen(false)}
+      >
+        <div className="wrapperHeaderBurgerMenu">
+          <h2 className="titleBurgerMenu">GBN & <br />INVEST</h2>
+        </div>
+        <ul className="wrapperNavigationBurgerMenu">
+          <li className="burgerMenuPageLinks">
+            <Link to='/team' className="BurgerMenuLinks">team</Link>
+          </li>
+          <li className="burgerMenuPageLinks">
+            <Link to='/properties' className="BurgerMenuLinks">properties</Link>
+          </li>
+          <li className="burgerMenuPageLinks">
+            <Link to='/blog' className="BurgerMenuLinks">blog</Link>
+          </li>
+          <li className="burgerMenuPageLinks">
+            <Link to='/events' className="BurgerMenuLinks">events</Link>
+          </li>
+          <li className="burgerMenuPageLinks">
+            <Link to='/areaguide' className="BurgerMenuLinks">Global Property Overview</Link>
+          </li>
+          <li className="burgerMenuPageLinks">
+            <Link to='/policy' className="BurgerMenuLinks">policy privacy</Link>
+          </li>
+        </ul>
+        <div className="wrapperBookV">
+          <button className="burgerMenuBookingBtn mainContactBtn">Join Us</button>
+          <article>
+            <h3 className="titleBurgerMenuFooter">London</h3>
+            <ul className="wrapperBurgerInfoContacts">
+              <li className="burgerInfoContacts">
+                <a href="tel:+02037657788" className="burgerLinkToCall">+ 020 - 3765 - 7788</a>
+              </li>
+              <li className="burgerInfoContacts">Regent 334 St.</li>
+              <li className="burgerInfoContacts">10:00 - 18:00</li>
+            </ul>
+          </article>
+        </div>
+    </BurgerMenuSlide>
+    </>
     )
 }
