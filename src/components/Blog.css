@@ -82,3 +82,40 @@
 .OldNewsCard:focus {
   transform: scale(1.1);
 }
+
+@media (max-width: 445px){
+  .titleBlog{
+    margin-bottom: 20px;
+  }
+  .ourBlogSection{
+    margin-bottom: 40px;
+  }
+  .wrapperLastNews{
+    flex-direction: column;
+  }
+  .wrapperLastNewsIMG{
+    max-width: 95%;
+  }
+  .wrapperLastNewsInfo{
+    max-width: 100%;
+  }
+  .textDateOfPublication{
+    font-size: 4vw;
+  }
+  .titleLastNews{
+    font-size: 5vw;
+    font-weight: 600;
+  }
+  .ingoAboutNews{
+    font-size: 5vw;
+  }
+  .mainContactBtnNewsReadMore{
+    margin: 0 auto;
+  }
+  .wrapperOldNews{
+    flex-direction: column;
+  }
+  .linkToReadAboutOldNews{
+    margin-bottom: 20px;
+  }
+}
