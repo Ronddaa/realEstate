@@ -40,6 +40,7 @@
   flex-direction: column;
   gap: 30px;
   max-width: 50%;
+  position: relative;
 }
 .textDateOfPublication {
   font-size: 1vw;
@@ -117,5 +118,29 @@
   }
   .linkToReadAboutOldNews{
     margin-bottom: 20px;
+  }
+
+  .wrapperReadMoreLastNews{
+    opacity: 0;
+    position: absolute;
+    transition: 0.4s;
+    transform: translateY(-180px);
+  }
+  .wrapperReadMoreLastNews ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    list-style-type: decimal;
+  }
+  .wrapperReadMoreLastNews ul li span{
+    font-weight: 700;
+  }
+
+  .showReadMoreBlog{
+    opacity: 1;
+    position: relative;
+    transform: translateY(0);
   }
 }
