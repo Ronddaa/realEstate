@@ -123,21 +123,28 @@
   }
   .modalContentJoinUs > article{
     grid-area: 3 / 1 / 9 / 6;
+    padding: 10% 5%;
+    gap: 5%;
   }
   .mainContactBtnModalJoinUs{
     grid-area: 9 / 1 / 10 / 6;
+    font-size: 3vw;
   }
   .titleModalJoinUs{
     font-size: 7vw;
   }
   .textModalJoinUs{
-    font-size: 3.5vw;
+    font-size: 2.8vw;
+  }
+  .formModalJoinUs{
+    gap: 15px;
   }
   .inputUserDateModalJoinUs{
-    font-size: 5vw;
+    font-size: 3.2vw;
+    padding: 5px;
   }
   .textInInputModalJoinUs{
-    font-size: 4vw;
+    font-size: 3vw;
   }
   .labelInputModalJoinUs
   .inputUserDateModalJoinUs:focus

@@ -56,12 +56,12 @@ export default function OurTeam() {
                     </ul>
                     <ul className="wrapperInfoAboutUs">
                         <li className="infoAboutUsTeam">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br /> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                            <p>The GBN Invest model has been built by modelling successful agents – it is proven. It allows you to have a model to follow, whether you have any previous estate agency experience or not, to successfully grow your business to achieve your goals and dreams.</p>
                             <div><img className='infoAboutUsTeamIMG' src={OurPlusInfoIMG} alt="People" width={842} height={670} /></div>
                         </li>
                         <li className="infoAboutUsTeam">
                             <div><img className='infoAboutUsTeamIMG' src={OurPlusInfoIMG} alt="People" width={842} height={670} /></div>                            
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br /> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p>The GBN Invest model has been built by modelling successful agents – it is proven. It allows you to have a model to follow, whether you have any previous estate agency experience or not, to successfully grow your business to achieve your goals and dreams.</p>
                         </li>
                     </ul>
                 </div>
