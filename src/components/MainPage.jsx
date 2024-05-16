@@ -12,6 +12,7 @@ import Header from './Header'
 import { ModalJoinUs } from './Modals'
 import modalJoinUsIMG from '../assets/modalJoinUsIMG.webp'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 
 export function MainTitle() {
@@ -84,10 +85,10 @@ export default function MainPage() {
         </div>
         <ul className="wrapperProperties">
           <li>
-            <a href='#' className="wrapperPropertiesLink">
+            <Link to='/properties' className="wrapperPropertiesLink">
               <h3 className="titleSale">for sale</h3>
               <img src={saleIMG} alt="Sale" className="rentSaleIMG" />
-            </a>
+            </Link>
           </li>
         </ul>
         <PropertiesSlider />
