@@ -43,5 +43,32 @@
 }
 
 @media (max-width:445px){
-  
+  .titleReviews{
+    font-size: 9vw;
+  }
+  .swiper-slide-active{
+    padding: 0 5%;
+  }
+  .wrapperReviews{
+    padding: 10%;
+  }
+  .userPhotoReviews{
+    max-width: 68px;
+  }
+  .titleUserNameReviews{
+    font-size: 5vw;
+  }
+  .textUserNameReviews{
+    font-size: 3vw;
+  }
+  .textUserComments{
+    font-size: 4vw;
+    margin-bottom: 30px;
+  }
+  .wrapperFooterComment{
+    margin-top: 0;
+  }
+  .infoAboutAgent, .textCommentDate{
+    font-size: 2vw;
+  }
 }

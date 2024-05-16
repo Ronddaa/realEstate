@@ -43,6 +43,7 @@ export default function Reviews() {
                 modules={[Navigation, EffectCoverflow]}>
                 
                     <SwiperSlide>
+                        <>
                         <article className="wrapperReviews">
                             <div className="wrapperUserInfoReviews">
                                 <img src={userProperties} alt="User" className="userPhotoReviews" width={116} height={116} />
@@ -57,6 +58,7 @@ export default function Reviews() {
                                 <p className="textCommentDate">24.01.2024</p>
                             </div>
                         </article>
+                        </>
                     </SwiperSlide>
                     <SwiperSlide>
                         <article className="wrapperReviews">
