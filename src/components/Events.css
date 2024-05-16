@@ -65,3 +65,27 @@
   line-height: 1.5;
   margin-bottom: 40%;
 }
+
+@media (max-width:445px){
+  .wrapperNextEvents{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .eventsCard{
+    flex-direction: column;
+  }
+  .eventsCard article{
+    max-width: 100%;
+  }
+  .titleEventCardDate{
+    max-width: 10%;
+  }
+  .titleEventCard{
+    font-size: 6vw;
+    margin-bottom: 20px;
+  }
+  .textEventCardInfo{
+    font-size: 4vw;
+    margin-bottom: 20px;
+  }
+}
