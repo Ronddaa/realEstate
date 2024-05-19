@@ -1,12 +1,12 @@
 import "./Blog.css";
-import heroBlogIMG from '../assets/blogHeroIMG.webp'
-import blogLastNewsIMG from '../assets/baliBlog.webp'
-import blogOldNewsIMG from '../assets/blogOldNewsIMG.webp'
-import Header from "./Header";
-import Footer from "./Footer";
+import heroBlogIMG from './blogHeroIMG.webp'
+import blogLastNewsIMG from './baliBlog.webp'
+import blogOldNewsIMG from './blogOldNewsIMG.webp'
+import Header from "../Header";
+import Footer from "../Footer";
 import { useEffect, useState } from 'react'
-import { ModalJoinUs } from './Modals'
-import modalJoinUsIMG from '../assets/modalJoinUsIMG.webp'
+import { ModalJoinUs } from '../Modals'
+import modalJoinUsIMG from './modalJoinUsIMG.webp'
 
 
 export default function Blog() {

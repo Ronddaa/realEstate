@@ -1,10 +1,10 @@
 import './Events.css'
-import eventsHeroIMG from '../assets/eventsHeroIMG.webp'
-import Header from './Header'
-import Footer from './Footer'
+import eventsHeroIMG from './eventsHeroIMG.webp'
+import Header from '../Header'
+import Footer from '../Footer'
 import { useEffect, useState } from 'react'
-import { ModalJoinUs } from './Modals'
-import modalJoinUsIMG from '../assets/modalJoinUsIMG.webp'
+import { ModalJoinUs } from '../Modals'
+import modalJoinUsIMG from './modalJoinUsIMG.webp'
 
 
 export default function Events() {

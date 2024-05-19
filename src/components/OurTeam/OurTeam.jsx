@@ -1,12 +1,12 @@
-import '../components/OurTeam.css'
-import Header from './Header'
-import OurTeamHeroIMG from '../assets/ourTeamMain.webp'
-import OurPlusInfoIMG from '../assets/OurPlusInfoIMG.webp'
-import PropertiesSlider from './Properties'
-import Footer from './Footer'
+import './OurTeam.css'
+import Header from '../Header'
+import OurTeamHeroIMG from './ourTeamMain.webp'
+import OurPlusInfoIMG from './OurPlusInfoIMG.webp'
+import PropertiesSlider from '../Properties'
+import Footer from '../Footer'
 import { useEffect, useState } from 'react'
-import { ModalJoinUs } from './Modals'
-import modalJoinUsIMG from '../assets/modalJoinUsIMG.webp'
+import { ModalJoinUs } from '../Modals'
+import modalJoinUsIMG from './modalJoinUsIMG.webp'
 
 
 

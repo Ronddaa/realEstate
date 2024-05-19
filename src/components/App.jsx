@@ -1,11 +1,11 @@
 import './App.css'
 import { Routes, Route } from "react-router-dom";
 import MainPage from './MainPage';
-import OurTeam from './OurTeam';
-import Blog from './Blog';
+import OurTeam from './OurTeam/OurTeam';
+import Blog from './Blog/Blog';
 import { Error404 } from './Error404';
-import AreaGuides from './AreaGuides';
-import Events from './Events';
+import AreaGuides from './AreaGuides/AreaGuides';
+import Events from './Events/Events';
 import Rent from './Rent'
 
 export default function App() {

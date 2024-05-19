@@ -1,11 +1,11 @@
 import './AreaGuides.css'
-import areaGuidesHeroIMG from '../assets/areaguidesHeroIMG.webp'
-import guidesIMG from '../assets/guidesIMG.webp'
-import Footer from './Footer'
-import Header from './Header'
+import areaGuidesHeroIMG from './areaguidesHeroIMG.webp'
+import guidesIMG from './guidesIMG.webp'
+import Footer from '../Footer'
+import Header from '../Header'
 import { useEffect, useState } from 'react'
-import { ModalJoinUs } from './Modals'
-import modalJoinUsIMG from '../assets/modalJoinUsIMG.webp'
+import { ModalJoinUs } from '../Modals'
+import modalJoinUsIMG from './modalJoinUsIMG.webp'
 
 export default function AreaGuides() {
     const [modalPrizeIsOpen, setModalPrizeOpen] = useState(false);
