@@ -6,7 +6,7 @@ import Blog from './Blog/Blog';
 import { Error404 } from './Error404';
 import AreaGuides from './AreaGuides/AreaGuides';
 import Events from './Events/Events';
-import Rent from './Rent'
+import Rent from './Properties/Rent'
 
 export default function App() {
   return (

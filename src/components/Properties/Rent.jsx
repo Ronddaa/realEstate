@@ -1,12 +1,12 @@
 import './Rent.css';
-import Header from './Header';
-import Footer from './Footer';
-import heroIMG from '../assets/heroIMG.webp'
+import Header from '../Header';
+import Footer from '../Footer';
+import heroIMG from './heroIMG.webp'
 import { useState, useEffect } from 'react';
-import { ModalJoinUs } from './Modals';
+import { ModalJoinUs } from '../Modals';
 import PropertiesCard from './PropertiesCard';
-import properties from './DBProperiesCard';
-import modalJoinUsIMG from '../assets/modalJoinUsIMG.webp'
+import properties from '../DBProperiesCard';
+import modalJoinUsIMG from './modalJoinUsIMG.webp'
 
 
 export default function Agents() {

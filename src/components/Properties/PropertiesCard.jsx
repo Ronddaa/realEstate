@@ -1,4 +1,5 @@
 import './PropertiesCard.css';
+import { Link } from 'react-router-dom';
 
 const PropertyCard = ({
     property
@@ -27,7 +28,7 @@ const PropertyCard = ({
         </ul>
         <p className="propertyDetails__price">{price} per month</p>
         {/* <button className="propertyDetails__button">View Property</button> */}
-        <a href="#" className="propertyDetails__button">View Property</a>
+        <Link to={`/detail/${property.id}`} className="propertyDetails__button">View Property</Link>
       </div> 
     </div> 
   );
