@@ -23,13 +23,13 @@ export default function Agents() {
       </h1>
       {/* Кнопки */}
       <div className="buttonContainer">
-        <button
+        {/* <button
           className="mainContactBtn"
           id="mainContactBtnJoinUs"
           onClick={() => setModalPrizeOpen(true)}
         >
           Join us
-        </button>
+        </button> */}
       </div>
       {/* Кнопки */}
       {/* Изображение */}

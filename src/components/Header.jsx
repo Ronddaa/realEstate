@@ -24,9 +24,9 @@ export default function Header() {
           <li>
             <Link to='/events' className="headerNavLinks">EVENTS</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to='/areaguides' className="headerNavLinks">Global Property Overview</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <button className="headerBookingBtn" id="headerBookingBtn">
