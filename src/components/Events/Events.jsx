@@ -19,9 +19,9 @@ export default function Events() {
             <section className='eventsHeroSection'>
                 <div className="container">
                     <h1 className="titleEvents"><span>EVE</span>NTS</h1>
-                    <div className='wrapperMainBtn wrapperMainBtnEvents'>
+                    {/* <div className='wrapperMainBtn wrapperMainBtnEvents'>
                         <button className='mainContactBtn mainContactBtnEvents' id='mainContactBtnJoinUs' onClick={() => setModalPrizeOpen(true)}>Join us</button>
-                    </div>
+                    </div> */}
                 </div>
                 <img src={eventsHeroIMG} alt="events" className="eventsHeroIMG" />
                 <div className="container">

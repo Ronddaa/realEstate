@@ -1,8 +1,8 @@
 import './OurTeam.css'
 import Header from '../Header'
 import OurTeamHeroIMG from './ourTeamMain.webp'
-import OurPlusInfoIMG from './OurPlusInfoIMG.webp'
-import PropertiesSlider from '../Properties'
+import aboutUsIMGOne from './aboutUsIMGOne.webp'
+import aboutUsIMGTwo from './aboutUsIMGTwo.webp'
 import Footer from '../Footer'
 import { useEffect, useState } from 'react'
 import { ModalJoinUs } from '../Modals'
@@ -21,9 +21,9 @@ export default function OurTeam() {
             <section className="ourTeamHero">
                 <div className="container">
                     <h1 className="titleOurTeamSection"><span>Our</span> Team</h1>
-                    <div className='wrapperMainBtn wrapperMainBtnTeam'>
+                    {/* <div className='wrapperMainBtn wrapperMainBtnTeam'>
                         <button className='mainContactBtn mainContactBtnTeam' onClick={() => setModalPrizeOpen(true)}>Join us</button>
-                    </div>
+                    </div> */}
                 </div>
                 <img className='ourTeamHeroIMG' src={OurTeamHeroIMG} alt="Building" />
             </section>
@@ -57,18 +57,14 @@ export default function OurTeam() {
                     <ul className="wrapperInfoAboutUs">
                         <li className="infoAboutUsTeam">
                             <p>The GBN Invest model has been built by modelling successful agents – it is proven. It allows you to have a model to follow, whether you have any previous estate agency experience or not, to successfully grow your business to achieve your goals and dreams.</p>
-                            <div><img className='infoAboutUsTeamIMG' src={OurPlusInfoIMG} alt="People" width={842} height={670} /></div>
+                            <div><img className='infoAboutUsTeamIMG' src={aboutUsIMGOne} alt="People" width={842} height={670} /></div>
                         </li>
                         <li className="infoAboutUsTeam">
-                            <div><img className='infoAboutUsTeamIMG' src={OurPlusInfoIMG} alt="People" width={842} height={670} /></div>                            
+                            <div><img className='infoAboutUsTeamIMG' src={aboutUsIMGTwo} alt="People" width={842} height={670} /></div>                            
                             <p>The GBN Invest model has been built by modelling successful agents – it is proven. It allows you to have a model to follow, whether you have any previous estate agency experience or not, to successfully grow your business to achieve your goals and dreams.</p>
                         </li>
                     </ul>
                 </div>
-            </section>
-            <section>
-                <h2 className="titleRealEstateOfOurAgents">real estate of our agents</h2>
-                <PropertiesSlider />
             </section>
             <Footer />
             <ModalJoinUs

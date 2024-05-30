@@ -4,7 +4,6 @@ import sprite from '../assets/icons.svg'
 
 
 export const ModalJoinUs = ({ isOpen, onClose, children }) => {
-    console.log('sadad');
 
     return (
         <Modal
@@ -22,7 +21,6 @@ export const ModalJoinUs = ({ isOpen, onClose, children }) => {
 }
 
 export const ModalSubmitAnInquiry = ({ isOpen, onClose, children }) => {
-    console.log('qweq');
 
     return (
         <Modal
@@ -39,7 +37,6 @@ export const ModalSubmitAnInquiry = ({ isOpen, onClose, children }) => {
 }
 
 export const BurgerMenuSlide = ({ isOpen, onClose, children }) => {
-    console.log('burger');
 
     return (
         <Modal

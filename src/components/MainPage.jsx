@@ -20,7 +20,7 @@ import { Link } from 'react-router-dom';
 
 export function MainTitle() {
   return (
-  <h1 className="mainTitle"><span>GBN &</span> Invest</h1>
+  <h1 className="mainTitle"><span>GBN </span> Invest</h1>
   )
 }
 

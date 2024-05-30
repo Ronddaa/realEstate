@@ -20,9 +20,9 @@ export default function Blog() {
             <section className="blogHeroSection">
                 <div className="container">
                     <h1 className="titleBlog"><span>bl</span>og</h1>
-                    <div className='wrapperMainBtn wrapperMainBtnBlog'>
+                    {/* <div className='wrapperMainBtn wrapperMainBtnBlog'>
                         <button className='mainContactBtn mainContactBtnBlog' id='mainContactBtnJoinUs' onClick={() => setModalPrizeOpen(true)}>Join us</button>
-                    </div>
+                    </div> */}
                 </div>
                 <img className="heroBlogIMG" src={heroBlogIMG} alt="building" />
             </section>
