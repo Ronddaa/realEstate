@@ -23,7 +23,10 @@ export default function Events() {
                         <button className='mainContactBtn mainContactBtnEvents' id='mainContactBtnJoinUs' onClick={() => setModalPrizeOpen(true)}>Join us</button>
                     </div> */}
                 </div>
+                <div className="wrapperEventsIMG">
                 <img src={eventsHeroIMG} alt="events" className="eventsHeroIMG" />
+                <p className="textOnEventsIMG">Exciting Event</p>
+                </div>
                 <div className="container">
                     <ul className="wrapperNextEvents">
                         <li className="eventsCard">

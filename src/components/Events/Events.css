@@ -9,6 +9,33 @@
 .wrapperMainBtnEvents {
   justify-content: center;
 }
+.wrapperEventsIMG{
+  position: relative;
+}
+.wrapperEventsIMG::after{
+  content: '';
+  background-color: #2b2e35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  opacity: 0.8;
+}
+.textOnEventsIMG{
+  font-size: 4.4vw;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 12;
+  width: 100%;
+}
 .eventsHeroIMG {
   width: 100%;
   margin-bottom: 100px;
@@ -26,7 +53,7 @@
   border: 1px solid #000;
 }
 .eventCardArticleIMG {
-  background-image: url(../assets/eventsIMG.webp);
+  background-image: url(../Events/eventsIMG.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
