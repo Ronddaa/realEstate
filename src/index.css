@@ -78,11 +78,11 @@ section {
 
 
 } /* for hide header onScroll */
-.heroSection, .ourTeamHero, .blogHeroSection, .eventsHeroSection{
+.heroSection, .ourTeamHero, .blogHeroSection, .eventsHeroSection, .titleRentComponent{
   padding-top: 80px;
 }
 @media (max-width: 445px){
-  .heroSection, .ourTeamHero, .blogHeroSection, .eventsHeroSection{
+  .heroSection, .ourTeamHero, .blogHeroSection, .eventsHeroSection, .titleRentComponent{
   padding-top: 80px;
 }
 }
