@@ -38,7 +38,7 @@ export default function MainPage() {
         
       </div>    
           <div className="wrapperHeroMainText">
-            <p className="heroMainText">Unlock a world of investment opportunities, just waiting for you to seize.</p>
+            <p className="heroMainText">Unlock a world of investment<br></br> opportunities, just waiting for you to seize.</p>
           <img className='heroIMG heroIMGFirst' src={heroIMG} alt="GBN" height={500} />
           </div>
       </section>

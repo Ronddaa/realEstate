@@ -5,7 +5,12 @@
   line-height: 0.9;
   text-align: center;
   position: relative;
-  z-index: -1;
+  z-index: 10;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .titleBlog > span {
   color: #f5b201;
@@ -15,6 +20,7 @@
 }
 .heroBlogIMG {
   width: 100%;
+  filter: brightness(30%);
 }
 .wrapperLastNews {
   display: flex;

@@ -65,10 +65,12 @@ export default function Agents() {
   return (
     <>
       <Header />
+      <div className="containerTitle">
       <h1 className="titleRentComponent">
         <span>PROPERTIES</span> FOR RENT
       </h1>
-      <img className="heroIMG" src={propertiesIMG} alt="GBN" height={500} />
+      <img className="propertiesIMG" src={propertiesIMG} alt="GBN" height={500} />
+      </div>
       <div className="container titleFAQContainer">
         <h2 className="titleRentCategory">FOR RENT</h2>
         <form className="formRentFAQs" action="">

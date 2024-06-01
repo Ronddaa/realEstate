@@ -19,13 +19,13 @@ export default function OurTeam() {
         <>
             <Header />
             <section className="ourTeamHero">
-                <div className="container">
+                <div className="containerTitle">
                     <h1 className="titleOurTeamSection"><span>Our</span> Team</h1>
                     {/* <div className='wrapperMainBtn wrapperMainBtnTeam'>
                         <button className='mainContactBtn mainContactBtnTeam' onClick={() => setModalPrizeOpen(true)}>Join us</button>
                     </div> */}
+                <img className='ourTeamHeroIMG ourTeamHeroIMGDark' src={OurTeamHeroIMG} alt="Building" />
                 </div>
-                <img className='ourTeamHeroIMG' src={OurTeamHeroIMG} alt="Building" />
             </section>
             <section className='storySection'>
                 <div className="container">

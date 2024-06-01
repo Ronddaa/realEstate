@@ -17,15 +17,12 @@ export default function Events() {
             <Header />
             
             <section className='eventsHeroSection'>
-                <div className="container">
+                <div className="containerTitle">
                     <h1 className="titleEvents"><span>EVE</span>NTS</h1>
                     {/* <div className='wrapperMainBtn wrapperMainBtnEvents'>
                         <button className='mainContactBtn mainContactBtnEvents' id='mainContactBtnJoinUs' onClick={() => setModalPrizeOpen(true)}>Join us</button>
                     </div> */}
-                </div>
-                <div className="wrapperEventsIMG">
                 <img src={eventsHeroIMG} alt="events" className="eventsHeroIMG" />
-                <p className="textOnEventsIMG">Exciting Event</p>
                 </div>
                 <div className="container">
                     <ul className="wrapperNextEvents">

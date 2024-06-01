@@ -18,13 +18,13 @@ export default function Blog() {
         <>
             <Header />
             <section className="blogHeroSection">
-                <div className="container">
+                <div className="containerTitle">
                     <h1 className="titleBlog"><span>bl</span>og</h1>
                     {/* <div className='wrapperMainBtn wrapperMainBtnBlog'>
                         <button className='mainContactBtn mainContactBtnBlog' id='mainContactBtnJoinUs' onClick={() => setModalPrizeOpen(true)}>Join us</button>
                     </div> */}
-                </div>
                 <img className="heroBlogIMG" src={heroBlogIMG} alt="building" />
+                </div>
             </section>
             <section className="ourBlogSection">
                 <div className="container wrapperLastNews">

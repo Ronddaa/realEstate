@@ -4,6 +4,12 @@
   text-align: center;
   white-space: nowrap;
   margin-bottom: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: #fff;
 }
 .titleOurTeamSection > span {
   color: #f5b201;
@@ -14,6 +20,9 @@
 }
 .ourTeamHeroIMG {
   width: 100%;
+}
+.ourTeamHeroIMGDark{
+  filter: brightness(50%);
 }
 .titleOurStory,
 .titleOurTeam,

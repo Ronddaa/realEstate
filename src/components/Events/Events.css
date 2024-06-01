@@ -2,6 +2,12 @@
   font-size: 23vw;
   text-align: center;
   text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 }
 .titleEvents > span {
   color: #f5b201;
@@ -39,6 +45,7 @@
 .eventsHeroIMG {
   width: 100%;
   margin-bottom: 100px;
+  filter: brightness(30%);
 }
 .wrapperNextEvents {
   display: flex;
