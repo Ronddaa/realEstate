@@ -12,6 +12,7 @@
 }
 .propertiesIMG{
   filter: brightness(30%);
+  min-height: 180px;
 }
 .titleRentComponent > span {
   color: #f5b201;

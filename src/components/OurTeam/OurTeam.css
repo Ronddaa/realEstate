@@ -3,7 +3,6 @@
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
-  margin-bottom: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -160,6 +159,9 @@
 }
 
 @media (max-width: 445px){
+  .ourTeamHeroIMG{
+    min-height: 180px;
+  }
   .titleOurStory{
     font-size: 8vw;
     margin-bottom: 50px;

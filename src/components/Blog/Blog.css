@@ -21,6 +21,7 @@
 .heroBlogIMG {
   width: 100%;
   filter: brightness(30%);
+  min-height: 180px;
 }
 .wrapperLastNews {
   display: flex;
@@ -141,7 +142,7 @@
     font-size: 5vw;
   }
   .mainContactBtnNewsReadMore{
-    margin: 0 auto;
+    margin: 0 auto 50px;
   }
   .wrapperOldNews{
     flex-direction: column;

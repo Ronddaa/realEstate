@@ -46,6 +46,7 @@
   width: 100%;
   margin-bottom: 100px;
   filter: brightness(30%);
+  min-height: 180px;
 }
 .wrapperNextEvents {
   display: flex;
