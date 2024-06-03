@@ -12,7 +12,9 @@ export default function Footer() {
                             <li className="footerNavLinks">
                                 <Link to='/team' className="footerNavLink">team</Link>
                             </li>
-                            
+                            <li className="footerNavLinks">
+                                <Link to='/service' className="footerNavLink">service</Link>
+                            </li>
                             <li className="footerNavLinks">
                                 <Link to='/sale' className="footerNavLink">sale</Link>
                             </li>
@@ -94,7 +96,9 @@ export default function Footer() {
                         <li className="footerNavLinks">
                             <Link to='/team' className="footerNavLink">team</Link>
                         </li>
-                       
+                        <li className="footerNavLinks">
+                            <Link to='/service' className="footerNavLink">Service</Link>
+                        </li>
                         <li className="footerNavLinks">
                             <Link to='/properties' className="footerNavLink">properties</Link>
                         </li>

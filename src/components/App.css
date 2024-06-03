@@ -369,7 +369,8 @@
     margin-bottom: 30px;
   }
   .heroMainText {
-    font-size: 4.2vw;
+    font-size: 5.2vw;
+    max-width: 80%;
   }
   .wrapperMainBtn {
     flex-direction: column;

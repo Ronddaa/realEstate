@@ -7,6 +7,7 @@ import { Error404 } from './Error404';
 // import AreaGuides from './AreaGuides/AreaGuides';
 import Events from './Events/Events';
 import Rent from './Properties/Rent'
+import Service from './Service/Service';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/team" element={<OurTeam />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/service" element={<Service />} />
         {/* <Route path="/areaguides" element={<AreaGuides />} /> */}
         <Route path="/properties" element={<Rent />} />
         <Route path="*" element={<Error404 />} />

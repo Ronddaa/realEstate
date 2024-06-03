@@ -36,6 +36,9 @@ export default function Header() {
             <li>
               <Link to='/team' className="headerNavLinks">TEAM</Link>
             </li>
+            <li>
+              <Link to='/service' className="headerNavLinks">Service</Link>
+            </li>
             <li className="dropdownMenuProperties">
               <Link to='/properties' className="headerNavLinks">PROPERTIES</Link>
             </li>
@@ -67,6 +70,9 @@ export default function Header() {
         <ul className="wrapperNavigationBurgerMenu">
           <li className="burgerMenuPageLinks">
             <Link to='/team' className="BurgerMenuLinks">team</Link>
+          </li>
+          <li className="burgerMenuPageLinks">
+            <Link to='/service' className="BurgerMenuLinks">service</Link>
           </li>
           <li className="burgerMenuPageLinks">
             <Link to='/properties' className="BurgerMenuLinks">properties</Link>
