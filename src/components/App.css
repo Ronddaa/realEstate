@@ -197,6 +197,7 @@
   color: transparent;
   -webkit-text-stroke: 1px black;
 }
+
 /* wantSection START */
 
 .wantSection {
@@ -438,7 +439,6 @@
   }
   .titleWantInfo {
     font-size: 5vw;
-    text-align: left;
   }
   .textWantInfo {
     font-size: 3vw;

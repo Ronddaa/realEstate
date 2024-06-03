@@ -65,3 +65,13 @@
   width: 105%;
   height: 110%;
 }
+
+@media (max-width:445px){
+  .ErrorSection{
+    padding-top: 30%;
+  }
+  .linkToMainPageBtnError{
+    min-width: 50%;
+    height: 30px;
+  }
+}

@@ -115,7 +115,7 @@ export default function PropertiesSlider() {
                             <h4 className="titlePriceCardProperties">&#163; 580,660</h4>
                             <a href="#" className="linkToReviewsCardProperties">view property</a>
                         </article>
-                        </SwiperSlide>
+                    </SwiperSlide>
                         </Swiper>
             </section>
         </>
