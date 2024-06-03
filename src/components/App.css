@@ -191,6 +191,7 @@
   font-weight: 400;
   z-index: 1;
   transition: 0.3s;
+  text-shadow: 1px 1px 1px #fff;
 }
 .wrapperPropertiesLink:hover h3,
 .wrapperPropertiesLink:focus h3 {
@@ -428,7 +429,6 @@
   .titleSale {
     font-size: 10vw;
     font-weight: 700;
-    text-shadow: 1px 1px 1px #fff;
   }
   .textWant {
     font-size: 2.4vw;

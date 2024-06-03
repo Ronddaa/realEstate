@@ -85,7 +85,13 @@ export default function MainPage() {
         <ul className="wrapperProperties">
           <li>
             <Link to='/properties' className="wrapperPropertiesLink">
-              <h3 className="titleSale">for sale</h3>
+              <h3 className="titleSale">For Sale</h3>
+              <img src={saleIMG} alt="Sale" className="rentSaleIMG" />
+            </Link>
+            </li>
+          <li>
+            <Link to='/developments' className="wrapperPropertiesLink">
+              <h3 className="titleSale">Developments</h3>
               <img src={saleIMG} alt="Sale" className="rentSaleIMG" />
             </Link>
           </li>

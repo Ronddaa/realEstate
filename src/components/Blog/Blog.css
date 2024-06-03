@@ -28,6 +28,9 @@
   justify-content: space-between;
   gap: 5%;
 }
+.container.wrapperLastNews{
+  margin-bottom: 30px;
+}
 .wrapperLastNewsIMG {
   max-width: 50%;
   position: relative;
